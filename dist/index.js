@@ -50,6 +50,4 @@ __exportStar(require("./sn_vul_patch_orch/index.js"), exports);
 __exportStar(require("./sn_ws/index.js"), exports);
 __exportStar(require("./sn_ws_int/index.js"), exports);
 __exportStar(require("./types/index.js"), exports);
-__exportStar(require("./x_taniu_tan_core/index.js"), exports);
-__exportStar(require("./x_taniu_vrpatch/index.js"), exports);
 //# sourceMappingURL=index.js.map

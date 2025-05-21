@@ -34,6 +34,4 @@ export * from './sn_vul_patch_orch/index.js';
 export * from './sn_ws/index.js';
 export * from './sn_ws_int/index.js';
 export * from './types/index.js';
-export * from './x_taniu_tan_core/index.js';
-export * from './x_taniu_vrpatch/index.js';
 //# sourceMappingURL=index.d.ts.map
