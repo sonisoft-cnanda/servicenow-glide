@@ -34,5 +34,3 @@ export * from './sn_vul_patch_orch';
 export * from './sn_ws';
 export * from './sn_ws_int';
 export * from './types';
-export * from './x_taniu_tan_core';
-export * from './x_taniu_vrpatch';

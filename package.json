@@ -10,10 +10,8 @@
     "create-index": "npx ctix build --config ./.ctirc",
     "prepublishOnly": "npm run build",
     "ci": "npm ci",
-    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
-    "prepublish": "npm version prerelease",
-    "alpha": "npm version premajor --preid alpha",
-    "beta": " npm version premajor --preid beta"
+    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo"
+   
   },
   "types": "./dist/index.d.ts",
   "files": [
