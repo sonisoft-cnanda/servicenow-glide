@@ -1,0 +1,58 @@
+{
+  "name": "@servicenow/glide",
+  "version": "27.0.0-alpha.16",
+  "description": "Contains type declaration for Glide Scriptable APIs",
+  "scripts": {
+    "prebuild": " npm run create-index",
+    "copy": "copyfiles -f  './src/*/*.ts' ./src/imports && rm ./src/imports/index.ts",
+    "buildts": "tsc -p ./ && tsc-alias",
+    "build": "npm run prebuild && npm run clean && npm run buildts",
+    "create-index": "npx ctix build --config ./.ctirc",
+    "prepublishOnly": "npm run build",
+    "ci": "npm ci",
+    "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo",
+    "prepublish": "npm version prerelease",
+    "alpha": "npm version premajor --preid alpha",
+    "beta": " npm version premajor --preid beta"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/types/index.js",
+    "./*": "./dist/*/index.js",
+    "./util": "./dist/util/index.js",
+    "./global": {
+      "import": "./dist/global/index.js",
+      "require": "./dist/global/index.js"
+    },
+    "./sn_vul": {
+      "import": "./dist/sn_vul/index.js",
+      "require": "./dist/sn_vul/index.js"
+    },
+    "./sn_sec_int": {
+      "import": "./dist/sn_sec_int/index.js",
+      "require": "./dist/sn_sec_int/index.js"
+    },
+    "./x_taniu_tan_core": {
+      "import": "./dist/x_taniu_tan_core/index.js",
+      "require": "./dist/x_taniu_tan_core/index.js"
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.8.10",
+    "copyfiles": "2.4.1",
+    "ctix": "^2.6.4",
+    "rimraf": "^6.0.1",
+    "ts-morph": "20.0.0",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^3.14.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=16.16.0",
+    "npm": ">=8.11.0"
+  }
+}

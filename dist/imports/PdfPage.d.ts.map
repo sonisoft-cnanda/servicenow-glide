@@ -1,0 +1,1 @@
+{"version":3,"file":"PdfPage.d.ts","sourceRoot":"","sources":["../../src/imports/PdfPage.ts"],"names":[],"mappings":"AAAA,qBAAa,OAAO;gBACJ,QAAQ,CAAC,EAAE,MAAM,EAAE,WAAW,CAAC,EAAE,MAAM;IACnD,SAAS,IAAI,MAAM;IAGnB,OAAO,IAAI,MAAM;IAGjB,QAAQ,IAAI,MAAM;IAGlB,MAAM,IAAI,MAAM;IAGhB,QAAQ,IAAI,MAAM;IAGlB,MAAM,IAAI,OAAO;CAGpB"}

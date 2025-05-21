@@ -1,0 +1,1 @@
+{"version":3,"file":"RequestAuthAPI.d.ts","sourceRoot":"","sources":["../../src/imports/RequestAuthAPI.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,qBAAqB,EAAE,MAAM,yBAAyB,CAAC;AAChE,OAAO,EAAE,cAAc,EAAE,MAAM,kBAAkB,CAAC;AAClD,OAAO,EAAE,eAAe,EAAE,MAAM,mBAAmB,CAAC;AAEpD,qBAAa,cAAc;;IAEvB,YAAY,IAAI,qBAAqB;IAGrC,iBAAiB,IAAI,cAAc;IAGnC,kBAAkB,IAAI,eAAe;IAGrC,mBAAmB,IAAI,IAAI;CAG9B"}

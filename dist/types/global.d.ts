@@ -1,0 +1,297 @@
+import { GlideRecord } from "./GlideRecord.js";
+import { GlideRecordSecure } from "./GlideRecordSecure.js";
+export declare namespace global {
+    class AbstractAjaxProcessor {
+        private CALLABLE_PREFIX;
+        private request;
+        private responseXML;
+        private gc;
+        constructor(request?: any, responseXML?: any, gc?: any);
+        process(): any;
+        newItem(name: string): any;
+        getParameter(name: string): string;
+        getDocument(): any;
+        getRootElement(): any;
+        getName(): string;
+        getValue(): string;
+        getType(): string;
+        getChars(): string;
+        setAnswer(value: string): void;
+        setError(error: string): void;
+        type: string;
+    }
+    class ChangeRequestSNC {
+        static ENFORCE_DATA_REQ_PROP: string;
+        static TYPE_COMPATIBILITY: string;
+        static MANAGE_WORKFLOW: string;
+        static CHANGE_REQUEST_FROM_NEW: string;
+        static TRANSACTION_CHANGE_STATE: string;
+        static NORMAL: string;
+        static STANDARD: string;
+        static EMERGENCY: string;
+        static LEGACY_STATE: any;
+        APPROVAL: {
+            REQUESTED: string;
+            APPROVED: string;
+            REJECTED: string;
+            NOT_REQUESTED: string;
+        };
+        STATE: string;
+        SUCCESSFUL: string;
+        UNSUCCESSFUL: string;
+        SUCCESSFUL_ISSUES: string;
+        REQUESTED: string;
+        APPROVED: string;
+        REJECTED: string;
+        NOT_REQUESTED: string;
+        EMERGENCY_WORKFLOW: string;
+        STANDARD_WORKFLOW: string;
+        NORMAL_WORKFLOW: string;
+        constructor(changeGr: any);
+        initialize(changeGr: any): void;
+        _getAPI(): any;
+        getState(): string;
+        getStateFieldName(): string;
+        getInitialState(): string;
+        isInitialState(): boolean;
+        changesToInitialState(): boolean;
+        changesFromInitialState(): boolean;
+        revertToInitialState(): boolean;
+        isTerminalState(): boolean;
+        isState(stateValue: string): boolean;
+        isNextState(stateValue: string): boolean;
+        isNextManualState(stateValue: string): boolean;
+        getNextStates(): string[];
+        getNextManualStates(): string[];
+        moveTo(stateValue: string): boolean;
+        canMoveTo(stateValue: string): boolean;
+        evaluateMoveTo(stateValue: string, returnAll: boolean): any;
+        canImplement(): boolean;
+        getAttributesModelContains(): string[];
+        modelContainsAttribute(attributeName: string): boolean;
+        hasStateAttribute(attributeName: string): boolean;
+        getStateAttributes(): string[];
+        isValidTable(): boolean;
+        isUsingModel(): boolean;
+        isEnforceData(): boolean;
+        setGlobalFromNew(value: boolean): void;
+        isGlobalFromNew(): boolean;
+        setTransactionChangeState(stateValue: string): void;
+        getTransactionChangeState(): string;
+        canModifyCI(checkTransaction: boolean): boolean;
+        isNew(): boolean;
+        changesToNew(): boolean;
+        changesFromNew(): boolean;
+        setNew(): boolean;
+        toNew(): boolean;
+        revertToNew(): boolean;
+        isAssess(): boolean;
+        changesToAssess(): boolean;
+        setAssess(): boolean;
+        assess(): boolean;
+        isAuthorize(): boolean;
+        changesToAuthorize(): boolean;
+        setAuthorize(): boolean;
+        authorize(): boolean;
+        isScheduled(): boolean;
+        changesToScheduled(): boolean;
+        setScheduled(): boolean;
+        scheduled(): boolean;
+        isImplement(): boolean;
+        changesToImplement(): boolean;
+        setImplement(): boolean;
+        implement(): boolean;
+        isReview(): boolean;
+        changesToReview(): boolean;
+        setReview(): boolean;
+        review(): boolean;
+        isClosed(): boolean;
+        changesToClosed(): boolean;
+        isClosedSuccessful(): boolean;
+        isClosedSuccessfulWithIssues(): boolean;
+        isClosedUnsuccessful(): boolean;
+        setClose(closeCode: string, closeNotes: string): boolean;
+        close(closeCode: string, closeNotes: string): boolean;
+        closeSuccessful(closeNotes: string): boolean;
+        closeSuccessfulWithIssues(closeNotes: string): boolean;
+        closeUnsuccessful(closeNotes: string): boolean;
+        isCanceled(): boolean;
+        changesToCanceled(): boolean;
+        setCancel(): boolean;
+        cancel(): boolean;
+        isApprovalRequested(): boolean;
+        isApproved(): boolean;
+        isRejected(): boolean;
+        setRequestApproval(): boolean;
+        requestApproval(): boolean;
+        isOnHold(): boolean;
+        onHoldChanges(): boolean;
+        onHoldReasonChanges(): boolean;
+        syncOnHoldTasks(): void;
+        updateOnHoldReason(): void;
+        addToOnHoldTaskList(taskID: string): void;
+        cancelAssociatedTasks(): void;
+        hasOpenTasks(): boolean;
+        modifyType(previousType: string): void;
+        deleteDefaultWorkflowContext(): void;
+        hasValidChoice(field: string, value: string): boolean;
+        setValue(name: string, value: any): void;
+        getValue(name: string): any;
+        setDisplayValue(name: string, value: any): void;
+        getDisplayValue(name: string): any;
+        insert(): string;
+        update(): string;
+        refreshGlideRecord(): void;
+        isChangeRequest(): boolean;
+        toString(): string;
+        toJS(): any;
+        static getAPIClass(): any;
+        static newNormal(): any;
+        static newStandard(): any;
+        static newEmergency(): any;
+        static newChange(modelSysIdOrType: string): any;
+    }
+    class ChangeRequest extends ChangeRequestSNC {
+        static CHANGE_REQUEST: string;
+        static NORMAL: string;
+        static STANDARD: string;
+        static EMERGENCY: string;
+        static LEGACY_STATE: any;
+        constructor(changeGr: any);
+        initialize(changeGr: any): void;
+        type: string;
+        static newNormal(): any;
+        static newStandard(): any;
+        static newEmergency(): any;
+        static newChange(modelSysIdOrType: string): any;
+    }
+    class ChangeProcessSNC {
+        static LOG_PROP: string;
+        static STATE_MODEL_PLUGIN: string;
+        static SHORT_DESC: string;
+        static NAME: string;
+        static NUMBER: string;
+        static TYPE: string;
+        static MODEL: string;
+        static STATE: string;
+        static findAll(orderBy?: string, textSearch?: string, encodedQuery?: string): GlideRecordSecure;
+        static findById(sysId: string): ChangeProcess | null;
+        static newChange(nameValuePairs: any): ChangeProcess | null;
+        static newChangeProcess(nameValuePairs: any): ChangeProcess | null;
+        constructor(_gr?: any, _gs?: any);
+        initialize(_gr?: any, _gs?: any): void;
+        resolveState(state?: string): string | null;
+        moveTo(state: string): boolean;
+        canMoveTo(state: string): boolean;
+        evaluateMoveTo(state: string): any;
+        approve(comments?: string): boolean;
+        reject(comments?: string): boolean;
+        _processApproval(approveReject: string, comments?: string): boolean;
+        getCIs(type: string): GlideRecord | null;
+        getTasks(): GlideRecord | null;
+        getChangeRequest(): ChangeRequest;
+        toString(): string;
+        toJS(): any;
+        deleteRecord(): boolean;
+        canWriteTo(fieldName: string): boolean;
+        insert(): string;
+        update(): string;
+        refreshGlideRecord(): void;
+        getGlideRecord(): GlideRecord;
+        setValue(fieldName: string, value: any): void;
+        setValues(values: any): any;
+        resolveReference(fieldName: string): any;
+        isReferenceField(fieldName: string): boolean;
+        type: string;
+    }
+    class ChangeProcess extends ChangeProcessSNC {
+        static newChangeProcess: typeof ChangeProcessSNC.newChangeProcess;
+        static newChange: typeof ChangeProcessSNC.newChange;
+        static findAll: typeof ChangeProcessSNC.findAll;
+        static findById: typeof ChangeProcessSNC.findById;
+        constructor(_gr?: any, _gs?: any);
+        initialize(_gr?: any, _gs?: any): void;
+        type: string;
+    }
+    class StandardChangeTemplateSNC extends ChangeProcess {
+        static CHANGE_RECORD_PRODUCER: string;
+        static CHANGE_TEMPLATE: string;
+        constructor(_gr?: any, _gs?: any);
+        initialize(_gr?: any, _gs?: any): void;
+        applyToChange(changeRequestGr: GlideRecord): boolean;
+        copyAttachments(changeRequestGr: GlideRecord): boolean;
+        static findById(sysId: string): StandardChangeTemplate | null;
+        static findAll(orderBy?: string, textSearch?: string, encodedQuery?: string): GlideRecordSecure;
+        type: string;
+    }
+    class StandardChangeTemplate extends StandardChangeTemplateSNC {
+        static findById: typeof StandardChangeTemplateSNC.findById;
+        static findAll: typeof StandardChangeTemplateSNC.findAll;
+        constructor(_gr?: any, _gs?: any);
+        initialize(_gr?: any, _gs?: any): void;
+        type: string;
+    }
+    class GlideQuery {
+        table: string;
+        plan: any[];
+        scope: string | null;
+        type: string;
+        constructor(table: string, plan?: any[], options?: {
+            scope?: string;
+        });
+        where(fieldOrQuery: string | GlideQuery, operator?: string, value?: any): GlideQuery;
+        orWhere(fieldOrQuery: string | GlideQuery, operator?: string, value?: any): GlideQuery;
+        whereNotNull(field: string): GlideQuery;
+        orWhereNotNull(field: string): GlideQuery;
+        whereNull(field: string): GlideQuery;
+        orWhereNull(field: string): GlideQuery;
+        getBy(keyValues: {
+            [key: string]: any;
+        }, selectedFields?: string[]): any;
+        get(key: string, selectFields?: string[]): any;
+        insert(keyValues: {
+            [key: string]: any;
+        }, selectFields?: string[]): any;
+        insertOrUpdate(changes: {
+            [key: string]: any;
+        }, selectFields?: string[], reason?: string): any;
+        update(changes: {
+            [key: string]: any;
+        }, selectFields?: string[], reason?: string, prefetchedSchema?: any, planOverride?: any, insertWhenNotFound?: boolean): any;
+        updateMultiple(changes: {
+            [key: string]: any;
+        }): {
+            rowCount: number;
+        };
+        del(): void;
+        deleteMultiple(): void;
+        select(...fields: string[]): any;
+        selectOne(...fields: string[]): any;
+        disableWorkflow(): GlideQuery;
+        disableAutoSysFields(): GlideQuery;
+        forceUpdate(): GlideQuery;
+        orderBy(field: string): GlideQuery;
+        orderByDesc(fieldOrAggregate: string, field?: string): GlideQuery;
+        limit(limit: number): GlideQuery;
+        withAcls(): GlideQuery;
+        avg(field: string): any;
+        max(field: string): any;
+        min(field: string): any;
+        sum(field: string): any;
+        count(): number;
+        groupBy(...fields: string[]): GlideQuery;
+        aggregate(aggregateType: string, field: string): GlideQuery;
+        having(aggregate: string, field: string, operator: string, value: number): GlideQuery;
+        toGlideRecord(): any;
+        static parse(table: string, encodedQuery: string): GlideQuery;
+        toString(): string;
+        static operators: {
+            [key: string]: string;
+        };
+        static checkHavingOperatorAndValue(operator: string, value: any): void;
+        static checkWhereOperator(operator: string, value: any): void;
+        static flattenFields(firstArg: any, args: IArguments): string[];
+        static checkWhereAmbiguity(glideQuery: GlideQuery): GlideQuery;
+    }
+}
+//# sourceMappingURL=global.d.ts.map

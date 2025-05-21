@@ -1,0 +1,1 @@
+{"version":3,"file":"GlideTextReader.d.ts","sourceRoot":"","sources":["../../src/types/GlideTextReader.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,0BAA0B,EAAE,MAAM,uCAAuC,CAAC;AAEnF,qBAAa,eAAe;gBACZ,WAAW,CAAC,EAAE,0BAA0B,EAAE,WAAW,CAAC,EAAE,MAAM;IAC1E,WAAW,IAAI,MAAM;IAGrB,QAAQ,IAAI,MAAM;CAGrB"}

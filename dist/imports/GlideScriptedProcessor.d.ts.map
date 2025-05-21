@@ -1,0 +1,1 @@
+{"version":3,"file":"GlideScriptedProcessor.d.ts","sourceRoot":"","sources":["../../src/imports/GlideScriptedProcessor.ts"],"names":[],"mappings":"AAAA,qBAAa,sBAAsB;;IAE/B,QAAQ,CAAC,GAAG,CAAC,EAAE,MAAM,GAAG,IAAI;IAG5B,SAAS,CAAC,UAAU,CAAC,EAAE,MAAM,CAAC,GAAG,EAAE,GAAG,CAAC,GAAG,IAAI;IAG9C,WAAW,CAAC,WAAW,CAAC,EAAE,MAAM,EAAE,CAAC,CAAC,EAAE,MAAM,GAAG,IAAI;CAGtD"}

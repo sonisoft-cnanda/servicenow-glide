@@ -1,0 +1,1 @@
+{"version":3,"file":"SystemDocumentList.js","sourceRoot":"","sources":["../../src/sn_doc_services/SystemDocumentList.ts"],"names":[],"mappings":";;;AAAA,MAAa,kBAAkB;IAC3B,gBAAe,CAAC;IAChB,WAAW,CAAC,WAAoB;QAC5B,OAAO,IAAI,kBAAkB,EAAE,CAAC;IACpC,CAAC;IACD,IAAI,CAAC,IAAa;QACd,OAAO,IAAI,kBAAkB,EAAE,CAAC;IACpC,CAAC;CACJ;AARD,gDAQC"}

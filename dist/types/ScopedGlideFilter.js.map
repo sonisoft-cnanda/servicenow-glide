@@ -1,0 +1,1 @@
+{"version":3,"file":"ScopedGlideFilter.js","sourceRoot":"","sources":["../../src/types/ScopedGlideFilter.ts"],"names":[],"mappings":";;;AAEA,MAAa,iBAAiB;IAC1B,YAAY,MAAe,EAAE,KAAc,IAAG,CAAC;IAC/C,WAAW,CAAC,EAAgB,EAAE,MAAe,EAAE,KAAW;QACtD,OAAO,KAAK,CAAC;IACjB,CAAC;IACD,KAAK,CAAC,EAAgB,EAAE,SAAe;QACnC,OAAO,KAAK,CAAC;IACjB,CAAC;IACD,gBAAgB,CAAC,aAAuB;IAExC,CAAC;CACJ;AAXD,8CAWC"}

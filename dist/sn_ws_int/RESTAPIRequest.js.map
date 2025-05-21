@@ -1,0 +1,1 @@
+{"version":3,"file":"RESTAPIRequest.js","sourceRoot":"","sources":["../../src/sn_ws_int/RESTAPIRequest.ts"],"names":[],"mappings":";;;AAGA,MAAa,cAAc;IACvB,YAAY,EAAY,EAAE,IAAY,EAAE,OAAkB,EAAE,SAAmB,IAAG,CAAC;IACnF,SAAS,CAAC,UAAmB;QACzB,OAAO,EAAE,CAAC;IACd,CAAC;IACD,yBAAyB;QACrB,OAAO,EAAE,CAAC;IACd,CAAC;IACD,gCAAgC;QAC5B,OAAO,IAAI,CAAC;IAChB,CAAC;CACJ;AAXD,wCAWC"}

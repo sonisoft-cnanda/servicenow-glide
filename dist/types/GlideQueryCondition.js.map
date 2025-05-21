@@ -1,0 +1,1 @@
+{"version":3,"file":"GlideQueryCondition.js","sourceRoot":"","sources":["../../src/types/GlideQueryCondition.ts"],"names":[],"mappings":";;;AAEA,MAAa,mBAAmB;IAC5B,gBAAe,CAAC;IAChB,YAAY,CAAC,IAAa,EAAE,IAAa,EAAE,KAAW;QAClD,OAAO,IAAI,mBAAmB,EAAE,CAAC;QAAA,CAAC;IACtC,CAAC;IACD,cAAc,CAAC,IAAa,EAAE,IAAa,EAAE,KAAW;QACpD,OAAO,IAAI,mBAAmB,EAAE,CAAC;QAAA,CAAC;IACtC,CAAC;CACJ;AARD,kDAQC"}

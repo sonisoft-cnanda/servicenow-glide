@@ -1,0 +1,1 @@
+{"version":3,"file":"ScopedXMLUtil.d.ts","sourceRoot":"","sources":["../../src/types/ScopedXMLUtil.ts"],"names":[],"mappings":"AAAA,qBAAa,aAAa;IACtB,kBAAkB,CAAC,GAAG,CAAC,EAAE,MAAM,GAAG,MAAM;IAGxC,WAAW,CAAC,GAAG,CAAC,EAAE,MAAM,EAAE,OAAO,CAAC,EAAE,OAAO,EAAE,iBAAiB,CAAC,EAAE,OAAO,GAAG,MAAM;CAGpF"}

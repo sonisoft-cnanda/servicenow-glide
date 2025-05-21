@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+      "strict": false,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "target": "ES2021",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "skipLibCheck": true,
+      "allowJs": true,
+      "checkJs": false,
+      "allowSyntheticDefaultImports": true,
+      "allowUmdGlobalAccess": true,
+      "allowArbitraryExtensions": true,
+      "skipDefaultLibCheck": true,
+      "outDir": "dist",
+      "rootDir": "./src",
+      "declarationDir": "dist",
+      "emitDeclarationOnly": false,
+      "declaration": true, // Generate declaration files
+      "declarationMap": true, // Generate declaration maps
+      "sourceMap": true, // Generate source maps
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"],
+    
+    "tsc-alias": {
+      "resolveFullPaths": true,
+      "verbose": false
+    }
+  }

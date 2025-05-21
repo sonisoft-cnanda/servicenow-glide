@@ -1,0 +1,1 @@
+{"version":3,"file":"IQueryCondition.d.ts","sourceRoot":"","sources":["../../src/imports/IQueryCondition.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,eAAe;IAC5B,YAAY,CAAC,IAAI,CAAC,EAAE,MAAM,EAAE,IAAI,CAAC,EAAE,MAAM,EAAE,KAAK,CAAC,EAAE,GAAG,GAAG,eAAe,CAAE;IAC1E,cAAc,CAAC,IAAI,CAAC,EAAE,MAAM,EAAE,IAAI,CAAC,EAAE,MAAM,EAAE,KAAK,CAAC,EAAE,GAAG,GAAG,eAAe,CAAC;CAC9E"}

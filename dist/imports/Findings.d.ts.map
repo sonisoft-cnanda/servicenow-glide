@@ -1,0 +1,1 @@
+{"version":3,"file":"Findings.d.ts","sourceRoot":"","sources":["../../src/imports/Findings.ts"],"names":[],"mappings":"AAAA,qBAAa,QAAQ;;IAEjB,SAAS,IAAI,IAAI;IAGjB,iBAAiB,CAAC,YAAY,CAAC,EAAE,GAAG,GAAG,IAAI;IAG3C,gBAAgB,CAAC,cAAc,CAAC,EAAE,GAAG,GAAG,IAAI;IAG5C,QAAQ,CAAC,IAAI,CAAC,EAAE,MAAM,EAAE,KAAK,CAAC,EAAE,GAAG,GAAG,IAAI;CAG7C"}

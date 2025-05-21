@@ -1,0 +1,1 @@
+{"version":3,"file":"GlideOAuthClientResponse.d.ts","sourceRoot":"","sources":["../../src/sn_auth/GlideOAuthClientResponse.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,eAAe,EAAE,MAAM,4BAA4B,CAAC;AAE7D,qBAAa,wBAAwB;;IAEjC,OAAO,IAAI,MAAM;IAGjB,cAAc,IAAI,MAAM;IAGxB,eAAe,IAAI,MAAM;IAGzB,eAAe,IAAI,MAAM;IAGzB,qBAAqB,IAAI,MAAM,CAAC,GAAG,EAAE,GAAG,CAAC;IAGzC,QAAQ,IAAI,eAAe;CAG9B"}

@@ -1,0 +1,31 @@
+import { Context } from '../imports/Context.js';
+import { Function } from '../imports/Function.js';
+import { SOAPResponseV2 } from '../imports/SOAPResponseV2.js';
+export declare class SOAPMessageV2 {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean);
+    execute(): SOAPResponseV2;
+    executeAsync(): SOAPResponseV2;
+    getEndpoint(): string;
+    getRequestBody(): string;
+    getRequestHeader(headerName?: string): string;
+    getRequestHeaders(): Record<any, any>;
+    getVariables(): Array<string>;
+    setAuthenticationProfile(type?: string, profileName?: string): void;
+    setBasicAuth(userName?: string, password?: string): void;
+    setEccCorrelator(correlator?: string): void;
+    setEccParameter(parameterName?: string, value?: string): void;
+    setEndpoint(endpoint?: string): void;
+    setHttpTimeout(timeoutMs?: number): void;
+    setLogLevel(logLevel?: string): void;
+    setMIDServer(midServerName?: string): void;
+    setMutualAuth(mutualAuthProtocol?: string): void;
+    setRequestBody(requestBody?: string): void;
+    setRequestHeader(headerName?: string, headerValue?: string): void;
+    setSOAPAction(soapAction?: string): void;
+    setStringParameter(parameterName?: string, value?: string): void;
+    setStringParameterNoEscape(parameterName?: string, value?: string): void;
+    setWSSecurity(keystoreId?: string, keystoreAlias?: string, keystorePassword?: string, certficateId?: string): void;
+    setWSSecurityUsernameToken(username?: string, password?: string): void;
+    setWSSecurityX509Token(keystoreId?: string, keystoreAlias?: string, keystorePassword?: string, certficateId?: string): void;
+}
+//# sourceMappingURL=SOAPMessageV2.d.ts.map

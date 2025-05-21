@@ -1,0 +1,47 @@
+import { Number } from '../imports/Number.js';
+import { Context } from '../imports/Context.js';
+import { Function } from '../imports/Function.js';
+import { NativeObject } from '../imports/NativeObject.js';
+import { TransformResult } from '../imports/TransformResult.js';
+export declare class TransformPart {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean);
+    add(summand?: Number): TransformPart;
+    autocorrelate(): TransformPart;
+    avg(): TransformPart;
+    bottom(count?: Number): TransformPart;
+    ceil(precision?: Number): TransformPart;
+    collect(): TransformPart;
+    copyData(obj1?: any, obj2?: any): TransformPart;
+    count(): TransformPart;
+    decompose(_tags?: any): TransformPart;
+    derivative(): TransformPart;
+    deviation(predictedValues?: any, method?: string): TransformPart;
+    div(divisor?: Number): TransformPart;
+    filter(_aggregator?: any, _window?: any): TransformPart;
+    fit(_params?: NativeObject): TransformPart;
+    floor(precision?: Number): TransformPart;
+    fractiles(_fractions?: any): TransformPart;
+    getResult(): TransformResult;
+    groupBy(field?: string): TransformPart;
+    interpolate(countOrDuration?: any): TransformPart;
+    iqr(): TransformPart;
+    label(label?: string): TransformPart;
+    limit(countOrDuration?: any): TransformPart;
+    log(base?: Number): TransformPart;
+    max(): TransformPart;
+    median(): TransformPart;
+    metric(metricName?: string): TransformPart;
+    min(): TransformPart;
+    mul(factor?: any): TransformPart;
+    partition(_aggregator?: string, _window?: any, _base?: any): TransformPart;
+    predict(obj1?: any, obj2?: any): TransformPart;
+    put(): void;
+    resample(a1?: any, a2?: any, a3?: any): TransformPart;
+    round(precision?: Number): TransformPart;
+    stddev(): TransformPart;
+    sub(substrahend?: any): TransformPart;
+    sum(): TransformPart;
+    top(count?: Number): TransformPart;
+    where(obj?: any): TransformPart;
+}
+//# sourceMappingURL=TransformPart.d.ts.map
