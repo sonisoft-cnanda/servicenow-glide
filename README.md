@@ -1,49 +1,92 @@
 # servicenow-glide
 
-Custom TypeScript type definitions for ServiceNow Glide Scriptable APIs, enhanced for multi-application development with the ServiceNow SDK.
+Concrete class stubs for ServiceNow Glide Scriptable APIs — designed for Jest mocking and testing of ServiceNow SDK ES Module projects.
 
-## Overview
+## Installation
 
-This package contains type declarations for Glide Scriptable APIs to be used with the ServiceNow SDK for comprehensive API type support in JavaScript module development.
+Since ServiceNow resolves `@servicenow/glide` as a special namespace at runtime, your test environment needs this package aliased under that name. npm supports this via the `npm:` protocol:
 
-Refer to [ServiceNow Documentation](https://docs.servicenow.com/bundle/washingtondc-api-reference/page/script/sdk/task/create-use-javascript-modules.html) for information regarding importing and using Glide APIs via this package.
+```bash
+npm install --save-dev @servicenow/glide@npm:servicenow-glide
+```
 
-## Why do we need this?
-
-### The Problem with Standard TypeScript Development
-
-This package is specifically designed for using TypeScript to build ES Modules for ServiceNow applications.
-
-ServiceNow provides many Script Includes and APIs, and organizations often build their own custom APIs as well. However, maintaining type definitions for these APIs can be challenging long-term.
-
-The standard ServiceNow documentation outlines how to add type definitions that are not previously defined in the official `@servicenow/glide` npm package. This approach is documented in the [ServiceNow TypeScript guide](https://www.servicenow.com/docs/bundle/zurich-application-development/page/build/servicenow-sdk/concept/using-typescript.html).
-
-### The Multi-Application Challenge
-
-While the standard approach works for individual applications, it becomes cumbersome when building multiple applications that interact with each other. 
-
-The core issue is that TypeScript's `declare module` functionality, while allowing you to extend previously defined package definitions (adding your own types or currently missing ones), does not allow you to define these extensions once and export them for reuse across projects.
-
-For example, if you define custom types like this:
+This installs `servicenow-glide` from npm but registers it as `@servicenow/glide` in your `node_modules`, so your imports work identically in both ServiceNow and your test environment:
 
 ```typescript
-declare module '@servicenow/glide/sn_app_api' {
-    class AppStoreAPI {
-        static canUpgradeAnyStoreApp(): boolean
-    }
+import { GlideRecord } from '@servicenow/glide';
+import { RESTMessageV2 } from '@servicenow/glide/sn_ws';
+```
+
+Your `package.json` will show:
+
+```json
+{
+  "devDependencies": {
+    "@servicenow/glide": "npm:servicenow-glide@^27.0.5"
+  }
 }
 ```
 
-You need to duplicate this declaration in each of your applications to use those types. This becomes difficult when scaling up with multiple applications, especially when applications need to interact with each other.
+## Why does this exist?
 
-### The Solution
+### The problem
 
-This library provides a de-transpiled version of the official ServiceNow npm library, enhanced to allow you to:
+ServiceNow publishes `@servicenow/glide` on npm as a **type declaration only** package (`.d.ts` files). This works fine for IDE autocompletion, but when you try to run tests with Jest or other frameworks, they expect actual JavaScript implementations — not just types. Importing a declaration-only module in a test results in errors because there are no constructors or methods to instantiate or mock.
 
-- **Define custom types once** in a centralized library
-- **Share type definitions** across multiple applications
-- **Maintain consistency** across your ServiceNow development ecosystem
-- **Reduce duplication** and maintenance overhead
+### What this package does
 
-By using this custom package, you can maintain your type definitions in one place and use them across all your ServiceNow applications, making your development process more scalable and maintainable. 
+This package takes every type declaration from the official `@servicenow/glide` and generates a concrete class stub with mock return values:
 
+- `string` methods return `""`
+- `number` methods return `0`
+- `boolean` methods return `false`
+- `void` methods are empty
+- Complex/custom types return `null`
+
+This means Jest can instantiate classes, call methods, and mock them without errors.
+
+### Multi-application type sharing
+
+Standard ServiceNow `declare module` extensions can't be exported for reuse across projects. If you define custom types for one app, you have to duplicate them in every other app. This package provides a concrete base you can extend in a shared library, eliminating that duplication.
+
+## Namespace imports
+
+All ServiceNow namespaces are available as sub-path imports:
+
+```typescript
+import { GlideRecord, GlideDateTime } from '@servicenow/glide';        // types (default)
+import { RESTMessageV2 } from '@servicenow/glide/sn_ws';               // web services
+import { GlideQuery } from '@servicenow/glide/types';                   // core types
+import { FlowDesigner } from '@servicenow/glide/sn_flow';              // flow designer
+import { StandardCredentialsProvider } from '@servicenow/glide/sn_cc';  // credentials
+```
+
+## Keeping up to date
+
+This package syncs with the upstream `@servicenow/glide` package via an automated script:
+
+```bash
+# Sync with the latest version
+npm run sync
+
+# Preview changes without writing
+npm run sync:check
+
+# Sync a specific version
+npm run sync -- --version 27.0.5
+```
+
+A GitHub Actions workflow runs weekly to check for upstream updates and automatically creates a PR when changes are detected.
+
+## Development
+
+```bash
+npm install         # install dependencies
+npm run sync        # sync from upstream @servicenow/glide
+npm run build       # compile TypeScript to dist/
+npm run clean       # remove dist/ and build artifacts
+```
+
+## License
+
+MIT
