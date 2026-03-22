@@ -1,0 +1,9 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class Sentencer {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    getSentences(input?: any, lang?: string): Array<any> {
+        return [];
+    }
+}

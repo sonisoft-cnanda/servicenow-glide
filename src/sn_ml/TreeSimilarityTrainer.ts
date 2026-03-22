@@ -1,0 +1,27 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class TreeSimilarityTrainer {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    setCaseFolding(caseFolding?: any): void {
+        
+    }
+    setCostFunction(costFunction?: any): void {
+        
+    }
+    setLocale(locale?: any): void {
+        
+    }
+    setParameter(okey?: any, ovalue?: any): void {
+        
+    }
+    setScope(scope?: any): void {
+        
+    }
+    setScopeKeyOnly(scope?: any): void {
+        
+    }
+    train(): string {
+        return "";
+    }
+}

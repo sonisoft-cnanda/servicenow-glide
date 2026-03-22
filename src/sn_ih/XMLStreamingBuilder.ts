@@ -1,17 +1,17 @@
-import { XMLStreamingAPI } from '../imports/XMLStreamingAPI';
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { GlideDateTime } from '../imports/GlideDateTime';
+import { Context } from "../imports/Context";
+import { Function } from "../imports/Function";
+import { StreamingXMLBuilder } from "./StreamingXMLBuilder";
+import { GlideDateTime } from "../types/GlideDateTime";
 
 export class XMLStreamingBuilder {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
-    build(): XMLStreamingAPI {
-        return new XMLStreamingAPI();
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    build(): StreamingXMLBuilder {
+        return null as any;
     }
     expiresAt(expireAt?: GlideDateTime): XMLStreamingBuilder {
-        return new XMLStreamingBuilder();
+        return null as any;
     }
     withAttachment(): XMLStreamingBuilder {
-        return new XMLStreamingBuilder();
+        return null as any;
     }
 }

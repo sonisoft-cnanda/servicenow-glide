@@ -1,32 +1,30 @@
-import { InputStream } from '../imports/InputStream';
-
 export class GlideExcelParser {
-    constructor() {}
+    constructor() {  }
     close(): void {
         
     }
     getColumnHeaders(): Array<any> {
-        return new Array();
+        return [];
     }
     getErrorMessage(): string {
         return "";
     }
     getRow(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getSheetNames(): Array<any> {
-        return new Array();
+        return [];
     }
     getTableInfo(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     next(): boolean {
         return false;
     }
-    parse(is?: InputStream): boolean {
+    parse(is?: any): boolean {
         return false;
     }
-    parseFormData(inStream?: InputStream): boolean {
+    parseFormData(inStream?: any): boolean {
         return false;
     }
     setHeaderRowNumber(headerRowNumber?: number): void {
@@ -41,10 +39,10 @@ export class GlideExcelParser {
     setSheetNumber(sheetNumber?: number): void {
         
     }
-    setSource(is?: InputStream): boolean {
+    setSource(is?: any): boolean {
         return false;
     }
-    setSourceFormData(inStream?: InputStream): boolean {
+    setSourceFormData(inStream?: any): boolean {
         return false;
     }
 }

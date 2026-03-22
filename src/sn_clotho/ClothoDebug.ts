@@ -1,0 +1,11 @@
+export class ClothoDebug {
+    static disable(): void {
+        
+    }
+    static enable(): void {
+        
+    }
+    static trace(onOff?: boolean): void {
+        
+    }
+}

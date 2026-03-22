@@ -1,2 +1,3 @@
-export class TimeZone {
+export interface TimeZone {
+  name: string;
 }

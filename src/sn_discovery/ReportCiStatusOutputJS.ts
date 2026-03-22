@@ -1,26 +1,26 @@
-import { Scriptable } from '../imports/Scriptable';
+import { Scriptable } from '../imports/Scriptable'
 
 export class ReportCiStatusOutputJS {
-    constructor() {}
+    constructor() {  }
     getCiOperationStatus(): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
     getCmdbCI(): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
     getDiscoveryState(): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
     getIpAddress(): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
     getIssues(): number {
         return 0;
     }
     getIssuesLink(): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
     toJson(): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
 }

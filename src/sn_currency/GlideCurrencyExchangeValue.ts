@@ -1,8 +1,8 @@
-import { GlideCurrencyValue } from '../imports/GlideCurrencyValue';
+import { GlideCurrencyValue } from "./GlideCurrencyValue";
 
 export class GlideCurrencyExchangeValue {
-    constructor() {}
-    equals(o?: any): boolean {
+    constructor() {  }
+    equals(o: any): boolean {
         return false;
     }
     getAmount(): string {
@@ -12,7 +12,7 @@ export class GlideCurrencyExchangeValue {
         return "";
     }
     getCurrencyValue(): GlideCurrencyValue {
-        return new GlideCurrencyValue();
+        return null as any;
     }
     getOriginalAmount(): string {
         return "";

@@ -1,0 +1,12 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class ChatLinkUnfurlObject {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    static sendUnfurledMessageQ(templateName?: string, tagMap?: Record<any, any>, deviceType?: string, messageId?: string, conversationId?: string): void {
+        
+    }
+    static unfurlLink(html?: string, url?: string): Record<any, any> {
+        return {} as any;
+    }
+}

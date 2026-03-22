@@ -1,483 +1,175 @@
-import { GlideQueryCondition } from '../imports/GlideQueryCondition';
-import { IQueryCondition } from '../imports/IQueryCondition';
-import { GlideElementDescriptor } from '../imports/GlideElementDescriptor';
-import { GlideElement } from '../imports/GlideElement';
-import { GlideRecord } from '../imports/GlideRecord';
+import { GlideQueryCondition } from "./GlideQueryCondition";
+import {
+  SafeTableField,
+  SafeTableFieldKey,
+} from "./_GlideRecordHelpers/SafeTableTypes";
 
-export class GlideAggregate {
-    constructor(tableName: string) {}
-    _next(): boolean {
-        return false;
-    }
-    _operation(): string {
-        return "";
-    }
-    _query(field?: any, value?: any): void {
-        
-    }
-    addActiveQuery(): GlideQueryCondition {
-        return new GlideQueryCondition();
-    }
-    addAggregate(agg?: string, name?: string): void {
-        
-    }
-    addBizCalendarTrend(fieldName?: string, bizCalendarSysId?: string): void {
-        
-    }
-    addBizCalendarTrendBase(fieldName?: string, bizCalendarSysId?: string): void {
-        
-    }
-    addBizCalendarTrendIntersect(anotherCalendarSysId?: string, overlapMode?: string): void {
-        
-    }
-    addDomainQuery(o?: any): void {
-        
-    }
-    addEncodedQuery(query?: string, enforceFieldACLs?: any): void {
-        
-    }
-    addExtraField(field?: string): void {
-        
-    }
-    addFunction(func?: string): void {
-        
-    }
-    addHaving(arg1?: string, arg2?: string, arg3?: string, arg4?: string): void {
-        
-    }
-    addInactiveQuery(): GlideQueryCondition {
-        return new GlideQueryCondition();
-    }
-    addJoinQuery(joinTable?: string, primaryField?: any, joinTableField?: any): IQueryCondition {
-        return new GlideQueryCondition();;
-    }
-    addNotNullQuery(fieldName?: string): GlideQueryCondition {
-        return new GlideQueryCondition();
-    }
-    addNullQuery(fieldName?: string): GlideQueryCondition {
-        return new GlideQueryCondition();
-    }
-    addQuery(name?: string, operator?: any, value?: any): IQueryCondition {
-        return new GlideQueryCondition();;
-    }
-    addTrend(fieldName?: string, timeInterval?: string, numUnits?: number): void {
-        
-    }
-    addValue(field?: string, value?: number): void {
-        
-    }
-    appendOrQuery(condition?: any, name?: string, operator?: any, value?: any): void {
-        
-    }
-    applyEncodedQuery(queryString?: string): void {
-        
-    }
-    applyRowSecurity(): void {
-        
-    }
-    applyTemplate(template?: string): void {
-        
-    }
-    attachGlideListener(className?: string, insert?: boolean, update?: boolean, del?: boolean, fields?: string, foreign?: any, foreign2?: any, details?: string): void {
-        
-    }
-    autoSysFields(b?: boolean): void {
-        
-    }
-    canCreate(): boolean {
-        return false;
-    }
-    canDelete(): boolean {
-        return false;
-    }
-    canRead(): boolean {
-        return false;
-    }
-    canWrite(): boolean {
-        return false;
-    }
-    changes(): boolean {
-        return false;
-    }
-    chooseWindow(f?: number, l?: number, forceCount?: boolean): void {
-        
-    }
-    close(): void {
-        
-    }
-    createElement(): boolean {
-        return false;
-    }
-    createIndex(): boolean {
-        return false;
-    }
-    deleteMultiple(): void {
-        
-    }
-    deleteRecord(): boolean {
-        return false;
-    }
-    disableSysIdInOptimization(): void {
-        
-    }
-    dropIndex(): boolean {
-        return false;
-    }
-    enableSessionLanguageJoin(): void {
-        
-    }
-    evaluateAsDefault(fieldName?: string): string {
-        return "";
-    }
-    find(columnName?: string, value?: string): boolean {
-        return false;
-    }
-    findForeignKey(collection?: string): string {
-        return "";
-    }
-    get(name?: any, value?: any): boolean {
-        return false;
-    }
-    getAggregate(agg?: string, name?: string): string {
-        return "";
-    }
-    getAggregateEncodedQuery(): string {
-        return "";
-    }
-    getAttribute(attribute?: string): string {
-        return "";
-    }
-    getBooleanAttribute(attribute?: string): boolean {
-        return false;
-    }
-    getCategory(): string {
-        return "";
-    }
-    getClassDisplayValue(): string {
-        return "";
-    }
-    getCount(): number {
-        return 0;
-    }
-    getDisplayName(): string {
-        return "";
-    }
-    getDisplayValue(name?: string): string {
-        return "";
-    }
-    getED(): GlideElementDescriptor {
-        return new GlideElementDescriptor();
-    }
-    getElement(columnName?: string): GlideElement {
-        return new GlideElement();
-    }
-    getElements(): Array<any> {
-        return new Array();
-    }
-    getEncodedQuery(): string {
-        return "";
-    }
-    getEngineParameter(name?: string): string {
-        return "";
-    }
-    getEscapedDisplayValue(): string {
-        return "";
-    }
-    getFields(): Array<any> {
-        return new Array();
-    }
-    getLabel(): string {
-        return "";
-    }
-    getLastErrorMessage(): string {
-        return "";
-    }
-    getLink(noStack?: boolean): string {
-        return "";
-    }
-    getLocation(): number {
-        return 0;
-    }
-    getPlural(): string {
-        return "";
-    }
-    getQuery(): string {
-        return "";
-    }
-    getRecordClassName(): string {
-        return "";
-    }
-    getRelatedLists(): Record<any, any> {
-        return {};
-    }
-    getRelatedRecords(foreignKey?: string, collectionID?: string): void {
-        
-    }
-    getRelatedTables(): Record<any, any> {
-        return {};
-    }
-    getRowCount(): number {
-        return 0;
-    }
-    getRowNumber(): number {
-        return 0;
-    }
-    getSetRowCount(): number {
-        return 0;
-    }
-    getTableName(): string {
-        return "";
-    }
-    getTableScope(): string {
-        return "";
-    }
-    getTableScopeId(): string {
-        return "";
-    }
-    getTableScopeName(): string {
-        return "";
-    }
-    getTotal(agg?: string, name?: string): number {
-        return 0;
-    }
-    getUniqueValue(): string {
-        return "";
-    }
-    getValue(name?: string): string {
-        return "";
-    }
-    groupBy(name?: string): void {
-        
-    }
-    hasAttachments(): boolean {
-        return false;
-    }
-    hasNext(): boolean {
-        return false;
-    }
-    hasRightsTo(operation?: string): boolean {
-        return false;
-    }
-    incrementViewCount(): void {
-        
-    }
-    initialize(): void {
-        
-    }
-    insert(): string {
-        return "";
-    }
-    insertLazy(): string {
-        return "";
-    }
-    insertOrUpdate(keyField?: string): string {
-        return "";
-    }
-    insertWithReferences(): string {
-        return "";
-    }
-    instanceOf(className?: string): boolean {
-        return false;
-    }
-    isActionAborted(): boolean {
-        return false;
-    }
-    isBizCalendarTrendFillGap(): boolean {
-        return false;
-    }
-    isEncodedQueryValid(query?: string): boolean {
-        return false;
-    }
-    isForeignTable(): boolean {
-        return false;
-    }
-    isInGlobalScope(): boolean {
-        return false;
-    }
-    isInSelectedScope(): boolean {
-        return false;
-    }
-    isInStoreScope(): boolean {
-        return false;
-    }
-    isMetadata(): boolean {
-        return false;
-    }
-    isNewRecord(): boolean {
-        return false;
-    }
-    isReadonly(): boolean {
-        return false;
-    }
-    isValid(): boolean {
-        return false;
-    }
-    isValidEncodedQuery(query?: string): boolean {
-        return false;
-    }
-    isValidField(columnName?: string): boolean {
-        return false;
-    }
-    isValidMetadataRecord(): boolean {
-        return false;
-    }
-    isValidRecord(): boolean {
-        return false;
-    }
-    isView(): boolean {
-        return false;
-    }
-    isWorkflow(): boolean {
-        return false;
-    }
-    largeResultExpected(): void {
-        
-    }
-    makeReadonly(): void {
-        
-    }
-    moreEncodedQuery(query?: string): void {
-        
-    }
-    newGlideRecordNamed(tableName?: string): GlideRecord {
-        return new GlideRecord("");
-    }
-    newRecord(): void {
-        
-    }
-    next(): boolean {
-        return false;
-    }
-    nextRecord(): boolean {
-        return false;
-    }
-    notifyUser(): void {
-        
-    }
-    onePassQuery(): void {
-        
-    }
-    operation(): string {
-        return "";
-    }
-    orderBy(name?: string): void {
-        
-    }
-    orderByAggregate(agg?: string, name?: string): void {
-        
-    }
-    orderByDesc(name?: string): void {
-        
-    }
-    popCurrent(): void {
-        
-    }
-    putCurrent(): void {
-        
-    }
-    putOptimizers(o?: any): void {
-        
-    }
-    query(field?: any, value?: any): void {
-        
-    }
-    queryNoDomain(): void {
-        
-    }
-    restoreLocation(): void {
-        
-    }
-    saveLocation(): void {
-        
-    }
-    scheduleScript(name?: string): void {
-        
-    }
-    setAbortAction(b?: boolean): void {
-        
-    }
-    setAggregateWindow(firstRowWanted?: number, lastRowWanted?: number): void {
-        
-    }
-    setBizCalendarTrendFillGap(b?: boolean): void {
-        
-    }
-    setCategory(category?: string): void {
-        
-    }
-    setDisplayValue(name?: string, value?: any): void {
-        
-    }
-    setEngineParameter(name?: string, value?: string): void {
-        
-    }
-    setForceUpdate(e?: boolean): void {
-        
-    }
-    setGroup(b?: boolean): void {
-        
-    }
-    setGroupByFollowRef(b?: boolean): void {
-        
-    }
-    setIntervalYearIncluded(b?: boolean): void {
-        
-    }
-    setLimit(limit?: number): void {
-        
-    }
-    setLocation(rowNumber?: number): void {
-        
-    }
-    setNewGuid(): string {
-        return "";
-    }
-    setNewGuidValue(guid?: string): void {
-        
-    }
-    setNoCount(): void {
-        
-    }
-    setOrder(b?: boolean): void {
-        
-    }
-    setOrderByFollowRef(b?: boolean): void {
-        
-    }
-    setQueryReferences(queryReferences?: boolean): void {
-        
-    }
-    setSystem(isSystem?: boolean): void {
-        
-    }
-    setUseEngines(e?: boolean): void {
-        
-    }
-    setValue(name?: string, value?: any): void {
-        
-    }
-    setWorkflow(e?: boolean): void {
-        
-    }
-    targetExtension(tableName?: string): void {
-        
-    }
-    update(reason?: any): string {
-        return "";
-    }
-    updateElement(): boolean {
-        return false;
-    }
-    updateLazy(): boolean {
-        return false;
-    }
-    updateMultiple(): void {
-        
-    }
-    updateNoDomain(reason?: any): string {
-        return "";
-    }
-    updateWithReferences(reason?: any): string {
-        return "";
-    }
+/**
+ * The scoped GlideAggregate class is an extension of GlideRecord and allows database aggregation (COUNT, SUM, MIN, MAX,
+ * AVG) queries to be done. This can be helpful in creating customized reports or in calculations for calculated fields.
+ * The GlideAggregate class works only on number fields. Since currency fields are strings, you can't use the
+ * GlideAggregate class on currency fields
+ */
+
+export type GlideAggregate<T extends keyof Tables | string = string> = IGlideAggregate<T>;
+export const GlideAggregate: IGlideAggregate = {} as any;
+interface IGlideAggregate<T extends keyof Tables | string = string> {
+  // Construction and table setup
+  new <T extends keyof Tables | string>(tableName: T): GlideAggregate<T>;
+
+  // ScopedGlideAggregate
+  _next(): boolean;
+  _query<F extends SafeTableFieldKey<T & string>, V extends SafeTableField<T & string, F & string>>(
+    field: F,
+    value: V
+  ): void;
+  addNotNullQuery<F extends SafeTableFieldKey<T & string>>(
+    fieldName: F
+  ): GlideQueryCondition<T>;
+  addNullQuery<F extends SafeTableFieldKey<T & string>>(fieldName: F): GlideQueryCondition<T>;
+  addQuery<F extends SafeTableFieldKey<T & string>, V extends SafeTableField<T & string, F & string>>(
+    name: F,
+    operator: any,
+    value: V
+  ): GlideQueryCondition<T>;
+  addSystemEncodedQuery(query: string): void;
+  addSystemQuery<F extends SafeTableFieldKey<T & string>, V extends SafeTableField<T & string, F & string>>(
+    name: F,
+    operator: any,
+    value: V
+  ): GlideQueryCondition<T>;
+  addUserEncodedQuery(query: string): void;
+  addUserQuery<F extends SafeTableFieldKey<T & string>, V extends SafeTableField<T & string, F & string>>(
+    name: F,
+    operator: any,
+    value: V
+  ): GlideQueryCondition<T>;
+  disableSecurityFeature(feature: string): void;
+  enableSecurityFeature(feature: string): void;
+  /**
+   * Moves to the next record in the GlideAggregate
+   */
+  next(): boolean;
+  hasNext(): boolean;
+  query<F extends SafeTableFieldKey<T & string>, V extends SafeTableField<T & string, F & string>>(
+    field: F,
+    value: V
+  ): void;
+  query(): void;
+
+  // GlideAggregate
+
+  /**
+   * Adds an aggregate
+   */
+  addAggregate(agg: string, name: string): void;
+  addBizCalendarTrend<F extends SafeTableFieldKey<T & string>>(
+    fieldName: F,
+    bizCalendarSysId: string
+  ): void;
+  addBizCalendarTrendBase<F extends SafeTableFieldKey<T & string>>(
+    fieldName: F,
+    bizCalendarSysId: string
+  ): void;
+  addBizCalendarTrendIntersect(
+    anotherCalendarSysId: string,
+    overlapMode: string
+  ): void;
+
+  /**
+   * Adds a query to the aggregate. Adds an encoded query to the other queries that may have been set for this aggregate
+   */
+  addEncodedQuery(query: string, enforceFieldACLs?: any): void;
+  getEncodedQuery(): string;
+  addHaving(arg1: string, arg2: string, arg3: string, arg4: string): void;
+  addSystemOrderBy<F extends SafeTableFieldKey<T & string>>(name: F): void;
+
+  /**
+   * Sorts the aggregates into descending order based on the specified field
+   */
+  addSystemOrderByDesc<F extends SafeTableFieldKey<T & string>>(name: F): void;
+  addTrend<F extends SafeTableFieldKey<T & string>>(
+    fieldName: F,
+    timeInterval: string,
+    numUnits: number
+  ): void;
+  addUserOrderBy<F extends SafeTableFieldKey<T & string>>(name: F): void;
+
+  /**
+   * Sorts the aggregates into descending order based on the specified field
+   */
+  addUserOrderByDesc<F extends SafeTableFieldKey<T & string>>(name: F): void;
+  /**
+   * Gets the value of the specified aggregate
+   */
+  getAggregate(agg: string, name: string): string;
+
+  /**
+   * Gets the query necessary to return the current aggregate
+   */
+  getAggregateEncodedQuery(): string;
+  getCount(): number;
+  getQuery(): string;
+  getTotal(agg: string, name: string): number;
+
+  /**
+   * Gets the value of a field
+   */
+  getValue<F extends SafeTableFieldKey<T & string>>(name: F): string;
+
+  /**
+   * Provides the name of a field to use in grouping the aggregates. May be called numerous times to set multiple
+   * group fields
+   */
+  groupBy<F extends SafeTableFieldKey<T & string>>(name: F): void;
+  isBizCalendarTrendFillGap(): boolean;
+
+  /**
+   * Orders the aggregates using the value of the specified field. The field will also be added to the group-by list
+   */
+  orderBy<F extends SafeTableFieldKey<T & string>>(name: F): void;
+
+  /**
+   * Sorts the aggregates based on the specified aggregate and field
+   */
+  orderByAggregate(agg: string, name: string): void;
+
+  /**
+   * Sorts the aggregates into descending order based on the specified field
+   */
+  orderByDesc<F extends SafeTableFieldKey<T & string>>(name: F): void;
+  setAggregateWindow(firstRowWanted: number, lastRowWanted: number): void;
+  setBizCalendarTrendFillGap(b: boolean): void;
+
+  /**
+   * Sets whether the results are to be grouped
+   */
+  setGroup(b: boolean): void;
+  setGroupByFollowRef(b: boolean): void;
+  setIntervalYearIncluded(b: boolean): void;
+  setOrder(b: boolean): void;
+  setOrderByFollowRef(b: boolean): void;
+
+  /**
+   * <p/>
+   * Enables or disables session language join which allows GlideRecord and GlideAggregate
+   * to work with translated fields before a query.
+   * <p/>
+   * <pre>
+   * var ga = new GlideAggregate("cmn_department");
+   * ga.enableSessionLanguageJoin();
+   * ga.addQuery("name", "人力资源");
+   * ga.addAggregate("count", null);
+   * ga.query();
+   * </pre>
+   */
+  enableSessionLanguageJoin(): void;
+
+  // GlideRecord
+  _get<F extends SafeTableFieldKey<T & string>, V extends SafeTableField<T & string, F & string>>(
+    name: F,
+    value?: V
+  ): boolean;
+  getTableName(): string;
+  getRowCount(): number;
 }

@@ -1,0 +1,21 @@
+export class CollabPermissionSynchronizer {
+    constructor() {  }
+    revokeCollaboratorPermissions(): void {
+        
+    }
+    revokeGroupPermissions(groupId?: string, appSysId?: string): void {
+        
+    }
+    revokeUserPermissions(userId?: string, appSysId?: string): void {
+        
+    }
+    syncCollaboratorPermissions(): void {
+        
+    }
+    syncGroupPermissions(groupId?: string, appSysId?: string): void {
+        
+    }
+    syncUserPermissions(userId?: string, appSysId?: string): void {
+        
+    }
+}

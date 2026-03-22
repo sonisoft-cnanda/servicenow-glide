@@ -1,72 +1,81 @@
 export class GlideDBFunctionBuilder {
-    constructor() {}
+    constructor() {  }
     add(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     andFunc(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     build(): string {
         return "";
     }
     caseFunc(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     coalesce(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     compare(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     concat(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     constant(constant?: string): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     datediff(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     dayofweek(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     divide(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     endfunc(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     field(field?: string): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
+    }
+    getLatitude(): GlideDBFunctionBuilder {
+        return null as any;
+    }
+    getLongitude(): GlideDBFunctionBuilder {
+        return null as any;
     }
     greatest(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     jsonValue(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     least(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     length(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     multiply(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     now(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     orFunc(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     position(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     substring(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
     }
     subtract(): GlideDBFunctionBuilder {
-        return new GlideDBFunctionBuilder();
+        return null as any;
+    }
+    toGeoPoint(): GlideDBFunctionBuilder {
+        return null as any;
     }
 }

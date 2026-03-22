@@ -1,17 +1,17 @@
-import { JSONStreamingAPI } from '../imports/JSONStreamingAPI';
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { GlideDateTime } from '../imports/GlideDateTime';
+import { Context } from "../imports/Context";
+import { Function } from "../imports/Function";
+import { StreamingJSONBuilder } from "./StreamingJSONBuilder";
+import { GlideDateTime } from "../types/GlideDateTime";
 
 export class JSONStreamingBuilder {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
-    build(): JSONStreamingAPI {
-        return new JSONStreamingAPI();
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    build(): StreamingJSONBuilder {
+        return null as any;
     }
     expiresAt(expireAt?: GlideDateTime): JSONStreamingBuilder {
-        return new JSONStreamingBuilder();
+        return null as any;
     }
     withAttachment(): JSONStreamingBuilder {
-        return new JSONStreamingBuilder();
+        return null as any;
     }
 }

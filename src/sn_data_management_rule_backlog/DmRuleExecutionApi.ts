@@ -1,0 +1,10 @@
+import { Context } from "../imports/Context";
+import { Function } from "../imports/Function";
+import { DmRuleExecutionFilter } from "./DmRuleExecutionFilter";
+
+export class DmRuleExecutionApi {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    getDmRuleExecutions(filter?: DmRuleExecutionFilter): string {
+        return "";
+    }
+}

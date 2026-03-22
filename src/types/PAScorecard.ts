@@ -1,5 +1,6 @@
 export class PAScorecard {
-    constructor() {}
+    result: any = null as any;
+    constructor() {  }
     addParam(key?: string, value?: string): void {
         
     }
@@ -7,6 +8,6 @@ export class PAScorecard {
         return "";
     }
     query(): any {
-        return null;
+        return null as any;
     }
 }

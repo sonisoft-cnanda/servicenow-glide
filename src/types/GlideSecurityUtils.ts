@@ -1,26 +1,26 @@
 export class GlideSecurityUtils {
-    cleanURL(uri?: string): string {
+    static cleanURL(uri: string): string {
         return "";
     }
-    enforceRelativeURL(uri?: string): string {
+    static enforceRelativeURL(uri: string): string {
         return "";
     }
-    enforceRelativeUrlAndCleanJavascript(uri?: string): string {
+    static enforceRelativeUrlAndCleanJavascript(uri: string): string {
         return "";
     }
-    enforceRelativeUrlAndCleanJavascriptLogoutRedirect(uri?: string): string {
+    static enforceRelativeUrlAndCleanJavascriptLogoutRedirect(uri: string): string {
         return "";
     }
-    escapeScript(script?: string): string {
+    static escapeScript(script: string): string {
         return "";
     }
-    isInFipsApprovedOnlyMode(): boolean {
+    static isInFipsApprovedOnlyMode(): boolean {
         return false;
     }
-    isURLWhiteListed(uri?: string): boolean {
+    static isURLWhiteListed(uri: string): boolean {
         return false;
     }
-    isURLWhiteListedStrict(uri?: string): boolean {
+    static isURLWhiteListedStrict(uri: string): boolean {
         return false;
     }
 }

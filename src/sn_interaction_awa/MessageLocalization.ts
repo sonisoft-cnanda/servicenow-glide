@@ -1,0 +1,5 @@
+export class MessageLocalization {
+    static getLocalizedAgentMessage(queueTable?: string, messageField?: string, key?: string, lang?: string): string {
+        return "";
+    }
+}

@@ -1,5 +1,5 @@
 export class GlideCurrencyValue {
-    constructor() {}
+    constructor() {  }
     equals(o?: any): boolean {
         return false;
     }
@@ -7,6 +7,9 @@ export class GlideCurrencyValue {
         return "";
     }
     getCurrencyCode(): string {
+        return "";
+    }
+    getNumericCurrencyCode(): string {
         return "";
     }
     toString(): string {

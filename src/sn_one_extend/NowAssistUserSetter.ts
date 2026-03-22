@@ -1,0 +1,9 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class NowAssistUserSetter {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    set(field?: string, value?: string): void {
+        
+    }
+}

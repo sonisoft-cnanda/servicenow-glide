@@ -1,0 +1,10 @@
+import { Context } from '../imports/Context'
+import { NativeObject } from '../imports/NativeObject'
+import { Function } from '../imports/Function'
+
+export class MIFVTableApi {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    getOperationByTableName(tableName?: string): NativeObject {
+        return null as any;
+    }
+}

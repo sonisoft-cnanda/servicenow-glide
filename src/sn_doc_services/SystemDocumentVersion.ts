@@ -1,15 +1,15 @@
 export class SystemDocumentVersion {
-    constructor() {}
-    document(documentSysId?: string): SystemDocumentVersion {
-        return new SystemDocumentVersion();
+    constructor() {  }
+    document(documentSysId: string): SystemDocumentVersion {
+        return null as any;
     }
-    type(type?: string): SystemDocumentVersion {
-        return new SystemDocumentVersion();
+    type(type: string): SystemDocumentVersion {
+        return null as any;
     }
-    url(url?: string): SystemDocumentVersion {
-        return new SystemDocumentVersion();
+    url(url: string): SystemDocumentVersion {
+        return null as any;
     }
-    versionNumber(versionNumber?: number): SystemDocumentVersion {
-        return new SystemDocumentVersion();
+    versionNumber(versionNumber: number): SystemDocumentVersion {
+        return null as any;
     }
 }

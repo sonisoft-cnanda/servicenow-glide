@@ -1,0 +1,15 @@
+export class CardManager {
+    constructor() {  }
+    assign(cardId?: string, userId?: string): void {
+        
+    }
+    create(boardId?: string, laneId?: string, taskId?: string): string {
+        return "";
+    }
+    updateBoard(boardId?: string, cardId?: string, laneId?: string): void {
+        
+    }
+    updateLane(laneId?: string, cardId?: string): void {
+        
+    }
+}

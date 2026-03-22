@@ -1,18 +1,20 @@
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { ScriptableObject } from '../imports/ScriptableObject';
-import { Scriptable } from '../imports/Scriptable';
+import { Context } from "../imports/Context";
+import { Scriptable } from "../imports/Scriptable";
+import { ScriptableObject } from "../imports/ScriptableObject";
 
 export class HistoryWalker {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
+    constructor(cx: Context, args: any[], ctorObj: Function, inNewExpr: boolean) {  }
+    getCheckpoint(): string {
+        return "";
+    }
     getUpdateNumber(): number {
         return 0;
     }
     getWalkedRecord(): ScriptableObject {
-        return new ScriptableObject();
+        return null as any;
     }
     getWalkedRecordCopy(): ScriptableObject {
-        return new ScriptableObject();
+        return null as any;
     }
     isFieldLevelSecurity(): boolean {
         return false;
@@ -35,22 +37,22 @@ export class HistoryWalker {
     printTimings(): void {
         
     }
-    setFieldLevelSecurity(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): void {
+    static setFieldLevelSecurity(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): void {
         
     }
-    setRecordLevelSecurity(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): void {
+    static setRecordLevelSecurity(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): void {
         
     }
-    setWithChanges(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): void {
+    static setWithChanges(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): void {
         
     }
-    setWithJournalFields(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): void {
+    static setWithJournalFields(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): void {
         
     }
-    setWithSysFields(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): void {
+    static setWithSysFields(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): void {
         
     }
-    setWithVariables(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): void {
+    static setWithVariables(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): void {
         
     }
     walkBackward(): boolean {
@@ -59,7 +61,7 @@ export class HistoryWalker {
     walkForward(): boolean {
         return false;
     }
-    walkTo(cx?: Context, thisObj?: Scriptable, args?: any[], funObj?: Function): boolean {
+    static walkTo(cx: Context, thisObj: Scriptable, args: any[], funObj: Function): boolean {
         return false;
     }
 }

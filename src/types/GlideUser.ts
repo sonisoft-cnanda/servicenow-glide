@@ -1,26 +1,184 @@
-import { GlideRecord } from '../imports/GlideRecord';
-import { GlideMemoryRecord } from '../imports/GlideMemoryRecord';
-import { GlideVector } from '../imports/GlideVector';
+import { GlideMemoryRecord } from "./GlideMemoryRecord";
+import { GlideRecord } from "./GlideRecord";
+import { GlideVector } from "./GlideVector";
 
 export class GlideUser {
-    constructor() {}
-    authenticate(user?: string, password?: string): boolean {
+    constructor() {  }
+    static getUser(user: string): GlideUser {
+        return null as any;
+    }
+    static getUserByID(id: string): GlideUser {
+        return null as any;
+    }
+    static getUserByEmail(email: string): GlideUser {
+        return null as any;
+    }
+    static getSysIdByEmail(email: string): string {
+        return "";
+    }
+    static authenticateMutualAuthToken(): string {
+        return "";
+    }
+    static authenticateOAuthAccessToken(token: string): string {
+        return "";
+    }
+    static authenticateUser(user: string, password: string): string {
+        return "";
+    }
+    static authenticate(user: string, password: string): boolean {
         return false;
     }
-    authenticateMutualAuthToken(): string {
+    static getCurrentUser(): GlideUser {
+        return null as any;
+    }
+    static getSysTimeZone(): string {
         return "";
     }
-    authenticateOAuthAccessToken(token?: string): string {
+    static isLockedOut(userName: string): boolean {
+        return false;
+    }
+    static isWebSvcAccessOnly(userName: string): boolean {
+        return false;
+    }
+    static resolveSysId(value: string): string {
         return "";
     }
-    authenticateUser(user?: string, password?: string): string {
+    static getSysId(name: string, value: string): string {
+        return "";
+    }
+    static resolveNameFromLoginName(name: string): string;
+    static resolveNameFromLoginName(name: any): string;
+    static resolveNameFromLoginName(...args: any[]): any {
+        return "";
+    }
+    static resolveNameFromSysID(sysID: string): string {
+        return "";
+    }
+    static getMyGroups(user: string): Array<string> {
+        return [];
+    }
+    static getMyExplicitGroups(u: string): Array<string> {
+        return [];
+    }
+    static getAllGroups(): Array<string> {
+        return [];
+    }
+    isDefault(): boolean {
+        return false;
+    }
+    getEmail(): string {
+        return "";
+    }
+    getFullName(): string {
+        return "";
+    }
+    getManagerID(): string {
+        return "";
+    }
+    getDepartmentID(): string {
+        return "";
+    }
+    getManagerName(): string {
         return "";
     }
     exists(): boolean {
         return false;
     }
-    getAllGroups(): Array<string> {
-        return new Array<string>();
+    getCompanyRecord(): GlideRecord {
+        return null as any;
+    }
+    getDomainID(): string {
+        return "";
+    }
+    getDomainDisplayValue(): string {
+        return "";
+    }
+    getTZ(): string {
+        return "";
+    }
+    getTimeZoneLabel(): string {
+        return "";
+    }
+    getTimeZoneLabelLang(language: string): string {
+        return "";
+    }
+    getDateTimeFormat(): string {
+        return "";
+    }
+    getDateFormat(): string {
+        return "";
+    }
+    getDateFormatEx(style: string): string {
+        return "";
+    }
+    setDateFormat(df: string): void {
+        
+    }
+    getTimeFormat(): string {
+        return "";
+    }
+    setTimeFormat(tf: string): void {
+        
+    }
+    getLanguage(): string {
+        return "";
+    }
+    getRecord(): GlideMemoryRecord {
+        return null as any;
+    }
+    isXML(): boolean {
+        return false;
+    }
+    isTimeLimitedCredential(): boolean {
+        return false;
+    }
+    isACRUser(): boolean {
+        return false;
+    }
+    isOpenIDConnect(): boolean {
+        return false;
+    }
+    getCountry(): string {
+        return "";
+    }
+    getTitle(): string {
+        return "";
+    }
+    getFirstName(): string {
+        return "";
+    }
+    getLastName(): string {
+        return "";
+    }
+    getMyExplicitGroups(): Array<string> {
+        return [];
+    }
+    isExplicitMemberOf(group: any): boolean {
+        return false;
+    }
+    getMyGroups(): Array<string> {
+        return [];
+    }
+    getMyGroupsExcludeAdmin(): Array<string> {
+        return [];
+    }
+    getManagedGroups(): Array<string> {
+        return [];
+    }
+    getLocation(): string {
+        return "";
+    }
+    getMobileNumber(): string {
+        return "";
+    }
+    getUserType(): string {
+        return "";
+    }
+    setPreferencesLoaded(b: boolean): void {
+        
+    }
+    getInitials(): string {
+        return "";
     }
     getAvatar(): string {
         return "";
@@ -28,193 +186,55 @@ export class GlideUser {
     getBusinessNumber(): string {
         return "";
     }
-    getCompanyID(): string {
-        return "";
-    }
-    getCompanyRecord(): GlideRecord {
-        return new GlideRecord("");
-    }
-    getCountry(): string {
-        return "";
-    }
-    getCurrentUser(): GlideUser {
-        return new GlideUser();
-    }
-    getDateFormat(): string {
-        return "";
-    }
-    getDateFormatEx(style?: string): string {
-        return "";
-    }
-    getDateTimeFormat(): string {
-        return "";
-    }
-    getDepartmentID(): string {
-        return "";
-    }
-    getDisplayName(): string {
-        return "";
-    }
-    getDomainDisplayValue(): string {
-        return "";
-    }
-    getDomainID(): string {
-        return "";
-    }
-    getEmail(): string {
-        return "";
-    }
-    getFirstName(): string {
-        return "";
-    }
-    getFullName(): string {
-        return "";
-    }
-    getID(): string {
-        return "";
-    }
-    getInitials(): string {
-        return "";
-    }
-    getLanguage(): string {
-        return "";
-    }
-    getLastName(): string {
-        return "";
-    }
-    getLocation(): string {
-        return "";
-    }
-    getManagedGroups(): Array<string> {
-        return new Array<string>();
-    }
-    getManagerID(): string {
-        return "";
-    }
-    getManagerName(): string {
-        return "";
-    }
-    getMobileNumber(): string {
-        return "";
-    }
-    getMyExplicitGroups(u?: string): Array<string> {
-        return new Array<string>();
-    }
-    getMyGroups(user?: string): Array<string> {
-        return new Array<string>();
-    }
-    getMyGroupsExcludeAdmin(): Array<string> {
-        return new Array<string>();
-    }
-    getName(): string {
-        return "";
-    }
-    getPreference(name?: string): string {
-        return "";
-    }
-    getRecord(): GlideMemoryRecord {
-        return new GlideMemoryRecord();
-    }
-    getRoles(): GlideVector {
-        return new GlideVector();
-    }
-    getSysId(name?: string, value?: string): string {
-        return "";
-    }
-    getSysIdByEmail(email?: string): string {
-        return "";
-    }
-    getSysTimeZone(): string {
-        return "";
-    }
-    getTZ(): string {
-        return "";
-    }
-    getTimeFormat(): string {
-        return "";
-    }
-    getTitle(): string {
-        return "";
-    }
-    getUser(user?: string): GlideUser {
-        return new GlideUser();
-    }
-    getUserByEmail(email?: string): GlideUser {
-        return new GlideUser();
-    }
-    getUserByID(id?: string): GlideUser {
-        return new GlideUser();
-    }
-    getUserRoles(): GlideVector {
-        return new GlideVector();
-    }
-    getUserType(): string {
-        return "";
-    }
-    hasRole(o?: any): boolean {
+    hasAssignedRole(roleName: string): boolean {
         return false;
     }
     hasRoles(): boolean {
         return false;
     }
-    isACRUser(): boolean {
-        return false;
+    getUserRoles(): GlideVector {
+        return null as any;
     }
-    isDefault(): boolean {
-        return false;
+    getRoles(): GlideVector {
+        return null as any;
     }
-    isExplicitMemberOf(group?: any): boolean {
-        return false;
-    }
-    isLockedOut(userName?: string): boolean {
-        return false;
-    }
-    isMemberOf(group?: any): boolean {
-        return false;
-    }
-    isOpenIDConnect(): boolean {
-        return false;
+    getAllRoles(): string[] {
+        return [];
     }
     isReadOnlyUser(): boolean {
         return false;
     }
-    isTimeLimitedCredential(): boolean {
-        return false;
-    }
-    isWebSvcAccessOnly(userName?: string): boolean {
-        return false;
-    }
-    isXML(): boolean {
-        return false;
-    }
-    resolveNameFromLoginName(name?: string): string {
-        return "";
-    }
-    resolveNameFromSysID(sysID?: string): string {
-        return "";
-    }
-    resolveSysId(value?: string): string {
-        return "";
-    }
-    savePreference(name?: string, value?: string): void {
-        
-    }
     savePreferences(): void {
         
     }
-    setDateFormat(df?: string): void {
+    setPreference(name: string, value: string): void {
         
     }
-    setDomainID(id?: string): void {
+    setDomainID(id: string): void {
         
     }
-    setPreference(name?: string, value?: string): void {
-        
+    getCompanyID(): string {
+        return "";
     }
-    setPreferencesLoaded(b?: boolean): void {
-        
+    getDisplayName(): string {
+        return "";
     }
-    setTimeFormat(tf?: string): void {
+    getID(): string {
+        return "";
+    }
+    getName(): string {
+        return "";
+    }
+    getPreference(name: string): string {
+        return "";
+    }
+    hasRole(o: any): boolean {
+        return false;
+    }
+    isMemberOf(group: any): boolean {
+        return false;
+    }
+    savePreference(name: string, value: string): void {
         
     }
 }

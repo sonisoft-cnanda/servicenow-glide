@@ -1,14 +1,14 @@
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { NativeArray } from '../imports/NativeArray';
+import { Context } from '../imports/Context'
+import { NativeArray } from '../imports/NativeArray'
+import { Function } from '../imports/Function'
 
 export class Preferences {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
     getDestinations(): NativeArray {
-        return new NativeArray();
+        return null as any;
     }
     getDestinationsByChannel(channelObj?: any): NativeArray {
-        return new NativeArray();
+        return null as any;
     }
     getUserGlobalPreference(): boolean {
         return false;

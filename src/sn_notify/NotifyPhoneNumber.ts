@@ -1,5 +1,5 @@
 export class NotifyPhoneNumber {
-    constructor() {}
+    constructor() {  }
     getDialCode(): string {
         return "";
     }

@@ -1,7 +1,7 @@
-import { GlideOAuthJWTConfig } from '../imports/GlideOAuthJWTConfig';
+import { GlideOAuthJWTConfig } from "./GlideOAuthJWTConfig";
 
 export class GlideOAuthClientRequest {
-    constructor() {}
+    constructor() {  }
     getGrantType(): string {
         return "";
     }
@@ -9,7 +9,7 @@ export class GlideOAuthClientRequest {
         return "";
     }
     getHeaders(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getMIDServer(): string {
         return "";
@@ -17,10 +17,10 @@ export class GlideOAuthClientRequest {
     getParameter(name?: string): string {
         return "";
     }
-    getParameters(): Record<any, any> {
-        return {};
-    }
     getPassword(): string {
+        return "";
+    }
+    getProviderName(): string {
         return "";
     }
     getRefreshToken(): string {
@@ -32,13 +32,13 @@ export class GlideOAuthClientRequest {
     getUserName(): string {
         return "";
     }
-    setGlideOAuthJWTConfig(glideOAuthJWTConfig?: GlideOAuthJWTConfig): void {
+    setGlideOAuthJWTConfig(scopedGlideOAuthJWTConfig?: GlideOAuthJWTConfig): void {
         
     }
     setGrantType(grantType?: string): void {
         
     }
-    setHead(name?: string, value?: string): void {
+    setHeader(name?: string, value?: string): void {
         
     }
     setMIDServer(midServer?: string): void {
@@ -47,10 +47,10 @@ export class GlideOAuthClientRequest {
     setParameter(name?: string, value?: string): void {
         
     }
-    setParameters(map?: Record<any, any>): void {
+    setPassword(password?: string): void {
         
     }
-    setPassword(password?: string): void {
+    setProviderName(name?: string): void {
         
     }
     setRefreshToken(refreshToken?: string): void {

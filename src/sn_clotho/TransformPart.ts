@@ -1,123 +1,122 @@
-import { Number } from '../imports/Number';
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { NativeObject } from '../imports/NativeObject';
-import { TransformResult } from '../imports/TransformResult';
+import { Context } from "../imports/Context";
+import { NativeObject } from "../imports/NativeObject";
+import { Function } from "../imports/Function";
+import { TransformResult } from "./TransformResult";
 
 export class TransformPart {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
-    add(summand?: Number): TransformPart {
-        return new TransformPart();
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    add(summand?: number): TransformPart {
+        return null as any;
     }
     autocorrelate(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     avg(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
-    bottom(count?: Number): TransformPart {
-        return new TransformPart();
+    bottom(count?: number): TransformPart {
+        return null as any;
     }
-    ceil(precision?: Number): TransformPart {
-        return new TransformPart();
+    ceil(precision?: number): TransformPart {
+        return null as any;
     }
     collect(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     copyData(obj1?: any, obj2?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     count(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     decompose(_tags?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     derivative(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     deviation(predictedValues?: any, method?: string): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
-    div(divisor?: Number): TransformPart {
-        return new TransformPart();
+    div(divisor?: number): TransformPart {
+        return null as any;
     }
     filter(_aggregator?: any, _window?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     fit(_params?: NativeObject): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
-    floor(precision?: Number): TransformPart {
-        return new TransformPart();
+    floor(precision?: number): TransformPart {
+        return null as any;
     }
     fractiles(_fractions?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     getResult(): TransformResult {
-        return new TransformResult();
+        return null as any;
     }
     groupBy(field?: string): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     interpolate(countOrDuration?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     iqr(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     label(label?: string): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     limit(countOrDuration?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
-    log(base?: Number): TransformPart {
-        return new TransformPart();
+    log(base?: number): TransformPart {
+        return null as any;
     }
     max(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     median(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     metric(metricName?: string): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     min(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     mul(factor?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     partition(_aggregator?: string, _window?: any, _base?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     predict(obj1?: any, obj2?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     put(): void {
         
     }
     resample(a1?: any, a2?: any, a3?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
-    round(precision?: Number): TransformPart {
-        return new TransformPart();
+    round(precision?: number): TransformPart {
+        return null as any;
     }
     stddev(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     sub(substrahend?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
     sum(): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
-    top(count?: Number): TransformPart {
-        return new TransformPart();
+    top(count?: number): TransformPart {
+        return null as any;
     }
     where(obj?: any): TransformPart {
-        return new TransformPart();
+        return null as any;
     }
 }

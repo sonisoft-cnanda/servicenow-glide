@@ -1,0 +1,9 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class Password2Encrypter {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    static encrypt(value?: string): string {
+        return "";
+    }
+}

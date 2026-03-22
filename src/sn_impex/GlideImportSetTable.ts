@@ -1,7 +1,7 @@
-import { NativeObject } from '../imports/NativeObject';
+import { NativeObject } from '../imports/NativeObject'
 
 export class GlideImportSetTable {
-    constructor() {}
+    constructor() {  }
     addDateTimeColumn(columnLabel?: string): void {
         
     }
@@ -9,6 +9,6 @@ export class GlideImportSetTable {
         
     }
     create(): NativeObject {
-        return new NativeObject();
+        return null as any;
     }
 }

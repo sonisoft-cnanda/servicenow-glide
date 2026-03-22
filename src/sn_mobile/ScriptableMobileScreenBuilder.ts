@@ -1,0 +1,15 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class ScriptableMobileScreenBuilder {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    initListScreen(tableName?: string, query?: string): void {
+        
+    }
+    initMobileWebScreen(url?: string): void {
+        
+    }
+    initRecordScreen(tableName?: string, sysId?: string): void {
+        
+    }
+}

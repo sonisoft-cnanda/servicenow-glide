@@ -1,0 +1,14 @@
+export class VAOneApi {
+    static callVaOneApiAsync(servicePlanId?: string, conversationId?: string, mappingId?: string, inputPayload?: Record<any, any>): void {
+        
+    }
+    static vaOneApiCancelled(response?: Record<any, any>): void {
+        
+    }
+    static vaOneApiCompleted(response?: Record<any, any>): void {
+        
+    }
+    static vaOneApiErrored(response?: Record<any, any>): void {
+        
+    }
+}

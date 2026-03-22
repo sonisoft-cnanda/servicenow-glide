@@ -1,5 +1,5 @@
 export class HttpRequestData {
-    constructor() {}
+    constructor() {  }
     addHeader(key?: string, value?: string): void {
         
     }
@@ -34,7 +34,7 @@ export class HttpRequestData {
         return "";
     }
     getHeaderMap(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getHost(): string {
         return "";
@@ -46,7 +46,7 @@ export class HttpRequestData {
         return "";
     }
     getQueryParamMap(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getRegion(): string {
         return "";

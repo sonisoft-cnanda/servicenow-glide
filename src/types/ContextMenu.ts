@@ -1,0 +1,5 @@
+export class ContextMenu {
+    addAction(id: string, label: string, action: string, order: string, img?: string): void {
+        
+    }
+}

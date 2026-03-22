@@ -1,80 +1,86 @@
-import { GlideTime } from '../imports/GlideTime';
-import { Calendar } from '../imports/Calendar';
-import { Counter } from '../imports/Counter';
-import { GlideDate } from '../imports/GlideDate';
-import { TimeZone } from '../imports/TimeZone';
-import { GlideDuration } from '../imports/GlideDuration';
+import { TimeZone } from "../imports/TimeZone";
+import { GlideTime } from "./GlideTime";
+import { GlideCounter } from "./GlideCounter";
+import { GlideDate } from "./GlideDate";
+import { GlideDuration } from "./GlideDuration";
 
 export class GlideDateTime {
-    constructor(value?: string) {}
-    add(value?: number): void {
+    constructor();
+    constructor(date: Date);
+    constructor(g: GlideDateTime);
+    constructor(value: string);
+    constructor(value: string, isDisplayValue: boolean);
+    constructor(...args: any[]) {  }
+    add(gd: GlideTime): void;
+    add(value: number): void;
+    add(...args: any[]): any {
         
     }
-    addDays(amount?: number): void {
+    addDays(amount: number): void {
         
     }
-    addDaysLocalTime(amount?: number): void {
+    addDaysLocalTime(amount: number): void {
         
     }
-    addDaysUTC(amount?: number): void {
+    addDaysUTC(amount: number): void {
         
     }
-    addMonths(amount?: number): void {
+    addMonths(amount: number): void {
         
     }
-    addMonthsLocalTime(amount?: number): void {
+    addMonthsLocalTime(amount: number): void {
         
     }
-    addMonthsUTC(amount?: number): void {
+    addMonthsUTC(amount: number): void {
         
     }
-    addSeconds(value?: number): void {
+    addSeconds(value: number): void {
         
     }
-    addWeeks(amount?: number): void {
+    addWeeks(amount: number): void {
         
     }
-    addWeeksLocalTime(amount?: number): void {
+    addWeeksLocalTime(amount: number): void {
         
     }
-    addWeeksUTC(amount?: number): void {
+    addWeeksUTC(amount: number): void {
         
     }
-    addYears(amount?: number): void {
+    addYears(amount: number): void {
         
     }
-    addYearsLocalTime(amount?: number): void {
+    addYearsLocalTime(amount: number): void {
         
     }
-    addYearsUTC(amount?: number): void {
+    addYearsUTC(amount: number): void {
         
     }
-    after(gdt?: GlideDateTime): boolean {
+    after(gdt: GlideDateTime): boolean {
         return false;
     }
-    before(gdt?: GlideDateTime): boolean {
+    before(gdt: GlideDateTime): boolean {
         return false;
     }
-    compareTo(o?: any): number {
+    compareTo(o: any): number {
         return 0;
     }
-    equals(o?: any): boolean {
+    equals(o: any): boolean {
         return false;
     }
-    excludeZFromFormat(format?: string): string {
+    static excludeZFromFormat(format: string): string {
         return "";
     }
-    getCalendarInTimeZone(timeZone?: string): Calendar {
-        return new Calendar();
+    getCalendarInTimeZone(timeZone: string): any {
+        return null as any;
     }
-    getCounter(): Counter {
-        return new Counter();
+    getCounter(): GlideCounter {
+        return null as any;
     }
     getDSTOffset(): number {
         return 0;
     }
     getDate(): GlideDate {
-        return new GlideDate();
+        return null as any;
     }
     getDayOfMonth(): number {
         return 0;
@@ -109,7 +115,9 @@ export class GlideDateTime {
     getDisplayValueInternal(): string {
         return "";
     }
-    getDisplayValueLang(style?: string, language?: string): string {
+    getDisplayValueLang(style: string): string;
+    getDisplayValueLang(style: string, language: string): string;
+    getDisplayValueLang(...args: any[]): any {
         return "";
     }
     getDisplayValueWithoutTZ(): string {
@@ -121,14 +129,14 @@ export class GlideDateTime {
     getInternalFormattedLocalTime(): string {
         return "";
     }
-    getInternalMidnight(iday?: number): GlideDateTime {
-        return new GlideDateTime();
+    getInternalMidnight(iday: number): GlideDateTime {
+        return null as any;
     }
     getLocalDate(): GlideDate {
-        return new GlideDate();
+        return null as any;
     }
     getLocalTime(): GlideTime {
-        return new GlideTime();
+        return null as any;
     }
     getMonth(): number {
         return 0;
@@ -145,17 +153,17 @@ export class GlideDateTime {
     getRaw(): Date {
         return new Date();
     }
-    getSpanTime(dayofweek?: number): GlideTime {
-        return new GlideTime();
+    getSpanTime(dayofweek: number): GlideTime {
+        return null as any;
     }
     getTZOffset(): number {
         return 0;
     }
     getTime(): GlideTime {
-        return new GlideTime();
+        return null as any;
     }
-    getUTCMidnight(dayofweek?: number): GlideDateTime {
-        return new GlideDateTime();
+    getUTCMidnight(dayofweek: number): GlideDateTime {
+        return null as any;
     }
     getUTCValue(): string {
         return "";
@@ -164,7 +172,7 @@ export class GlideDateTime {
         return "";
     }
     getUserTimeZone(): TimeZone {
-        return new TimeZone();
+        return null as any;
     }
     getValue(): string {
         return "";
@@ -199,80 +207,92 @@ export class GlideDateTime {
     isValid(): boolean {
         return false;
     }
-    onOrAfter(gdt?: GlideDateTime): boolean {
+    onOrAfter(gdt: GlideDateTime): boolean {
         return false;
     }
-    onOrBefore(gdt?: GlideDateTime): boolean {
+    onOrBefore(gdt: GlideDateTime): boolean {
         return false;
     }
-    setDayOfMonth(day?: number): void {
+    setDayOfMonth(day: number): void {
         
     }
-    setDayOfMonthLocalTime(day?: number): void {
+    setDayOfMonthLocalTime(day: number): void {
         
     }
-    setDayOfMonthUTC(day?: number): void {
+    setDayOfMonthUTC(day: number): void {
         
     }
-    setDebugTZ(debugTZ?: TimeZone): void {
+    setDebugTZ(debugTZ: TimeZone): void {
         
     }
-    setDisplayValue(value?: string, format?: string): void {
+    setDisplayValue(asDisplayed: string): void;
+    setDisplayValue(value: string, format: string): void;
+    setDisplayValue(...args: any[]): any {
         
     }
-    setDisplayValueInternal(value?: string): void {
+    setDisplayValueInternal(value: string): void {
         
     }
-    setDisplayValueInternalWithAlternates(value?: string): void {
+    setDisplayValueInternalWithAlternates(value: string): void {
         
     }
-    setDisplayValueLang(asDisplayed?: string, style?: string, language?: string): void {
+    setDisplayValueLang(asDisplayed: string, style: string): void;
+    setDisplayValueLang(asDisplayed: string, style: string, language: string): void;
+    setDisplayValueLang(...args: any[]): any {
         
     }
-    setGlideDateTime(g?: GlideDateTime): void {
+    setGlideDateTime(g: GlideDateTime): void {
         
     }
-    setInitialValue(value?: string): void {
+    setInitialValue(value: string): void {
         
     }
-    setMonth(month?: number): void {
+    setMonth(month: number): void {
         
     }
-    setMonthLocalTime(month?: number): void {
+    setMonthLocalTime(month: number): void {
         
     }
-    setMonthUTC(month?: number): void {
+    setMonthUTC(month: number): void {
         
     }
-    setNumericValue(l?: number): void {
+    setNumericValue(l: number): void {
         
     }
-    setTZ(tz?: TimeZone): void {
+    setTZ(tz: TimeZone): void {
         
     }
-    setTimeZone(timeZoneAsString?: string): boolean {
+    setTimeZone(timeZoneAsString: string): boolean {
         return false;
     }
-    setValue(number?: number): void {
+    setValue(o: any): void;
+    setValue(number: number): void;
+    setValue(...args: any[]): any {
         
     }
-    setValueUTC(dt?: string, format?: string): void {
+    setValueUTC(dt: string, format: string): void {
         
     }
-    setXMLValue(xml?: string): void {
+    setXMLValue(xml: string): void {
         
     }
-    setYear(year?: number): void {
+    setYear(year: number): void {
         
     }
-    setYearLocalTime(year?: number): void {
+    setYearLocalTime(year: number): void {
         
     }
-    setYearUTC(year?: number): void {
+    setYearUTC(year: number): void {
         
     }
-    subtract(start?: GlideDateTime, end?: GlideDateTime): GlideDuration {
-        return new GlideDuration();
+    subtract(gd: GlideTime): void;
+    subtract(value: number): void;
+    subtract(value: number): void;
+    subtract(...args: any[]): any {
+        
+    }
+    static subtract(start: GlideDateTime, end: GlideDateTime): GlideDuration {
+        return null as any;
     }
     toString(): string {
         return "";

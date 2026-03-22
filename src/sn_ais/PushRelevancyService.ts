@@ -1,0 +1,12 @@
+export class PushRelevancyService {
+    constructor() {  }
+    pushRelevancyModelToAis(profileId?: string, relevancyModelJson?: string): void {
+        
+    }
+    pushRelevancyModelToAisWithArtifact(artifactId?: string): void {
+        
+    }
+    pushRelevancyModelToAisFromLegacyRelevancyModelTable(artifactId?: string, relevancyModelJson?: string): void {
+        
+    }
+}

@@ -1,0 +1,5 @@
+export class AWADocument {
+    static getAWASkillsByDocument(documentTable?: string, documentSysId?: string, includeCategory?: boolean): Array<any> {
+        return [];
+    }
+}

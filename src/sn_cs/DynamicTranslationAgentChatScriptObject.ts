@@ -1,0 +1,12 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class DynamicTranslationAgentChatScriptObject {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    persistTranslatedResponseForAgent(requestPayloadRaw?: any, translationResultRaw?: any): void {
+        
+    }
+    persistTranslatedResponseForRequester(requestPayloadRaw?: any, translationResultRaw?: any): void {
+        
+    }
+}

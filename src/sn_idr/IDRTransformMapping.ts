@@ -1,0 +1,10 @@
+export class IDRTransformMapping {
+    sourceLabel: string = "";
+    sourceName: string = "";
+    targetLabel: string = "";
+    targetName: string = "";
+    sysId: string = "";
+    adapterRuleName: string = "";
+    adapterRuleSysId: string = "";
+    isJournalField: boolean = false;
+}

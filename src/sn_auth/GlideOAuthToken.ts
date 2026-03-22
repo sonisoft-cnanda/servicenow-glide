@@ -1,5 +1,5 @@
 export class GlideOAuthToken {
-    constructor() {}
+    constructor() {  }
     getAccessToken(): string {
         return "";
     }
@@ -8,6 +8,9 @@ export class GlideOAuthToken {
     }
     getExpiresIn(): number {
         return 0;
+    }
+    getIdTokenClaims(): any {
+        return null as any;
     }
     getRefreshToken(): string {
         return "";
@@ -19,6 +22,12 @@ export class GlideOAuthToken {
         return "";
     }
     getScope(): string {
+        return "";
+    }
+    getUserInfoClaims(): any {
+        return null as any;
+    }
+    getUserToLogin(): string {
         return "";
     }
 }

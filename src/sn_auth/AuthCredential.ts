@@ -1,5 +1,5 @@
 export class AuthCredential {
-    constructor() {}
+    constructor() {  }
     getAttribute(key?: string): string {
         return "";
     }

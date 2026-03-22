@@ -1,7 +1,7 @@
-import { GlideOAuthToken } from '../imports/GlideOAuthToken';
+import { GlideOAuthToken } from "./GlideOAuthToken";
 
 export class GlideOAuthClientResponse {
-    constructor() {}
+    constructor() {  }
     getBody(): string {
         return "";
     }
@@ -15,9 +15,12 @@ export class GlideOAuthClientResponse {
         return 0;
     }
     getResponseParameters(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getToken(): GlideOAuthToken {
-        return new GlideOAuthToken();
+        return null as any;
+    }
+    getparameters(): number {
+        return 0;
     }
 }

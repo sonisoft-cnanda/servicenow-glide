@@ -1,19 +1,19 @@
-import { Scriptable } from '../imports/Scriptable';
+import { Scriptable } from '../imports/Scriptable'
 
 export class DiscoveryAPI {
-    createPageCountRecordForPatternExecution(outputEccId?: string, discoveryStatus?: string): string {
+    static createPageCountRecordForPatternExecution(outputEccId?: string, discoveryStatus?: string): string {
         return "";
     }
-    discoverIpAddress(ipAddress?: any, application?: any, source?: any): Scriptable {
-        return new Scriptable();
+    static discoverIpAddress(ipAddress?: any, application?: any, source?: any): Scriptable {
+        return null as any;
     }
-    getMidServerFromSchedule(scheduler?: string): string {
+    static getMidServerFromSchedule(scheduler?: string): string {
         return "";
     }
-    reportCiIpAddressStatus(ipAddress?: any, discoveryStatusSysId?: any): Scriptable {
-        return new Scriptable();
+    static reportCiIpAddressStatus(ipAddress?: any, discoveryStatusSysId?: any): Scriptable {
+        return null as any;
     }
-    reportCiStatus(discoveryStatusSysId?: any): Scriptable {
-        return new Scriptable();
+    static reportCiStatus(discoveryStatusSysId?: any): Scriptable {
+        return null as any;
     }
 }

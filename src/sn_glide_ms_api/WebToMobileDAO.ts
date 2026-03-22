@@ -1,0 +1,6 @@
+export class WebToMobileDAO {
+    constructor(data?: string) {  }
+    getFormBuilderMetadata(table?: string, view?: string): string {
+        return "";
+    }
+}

@@ -1,0 +1,8 @@
+export class Events {
+    static logCancellation(workItemSysId?: string, reason?: string): void {
+        
+    }
+    static logRejection(workItemRejectionSysId?: string): void {
+        
+    }
+}

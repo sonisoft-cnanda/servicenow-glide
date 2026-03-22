@@ -1,0 +1,9 @@
+import { Context } from "../imports/Context";
+import { Function } from "../imports/Function";
+
+export class WebContentHandler {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    fetchPage(pageUrl?: string, titleSelector?: string, contentSelector?: string, followRedirects?: boolean, method?: string, content?: string, contentType?: string, headers?: any): Record<any, any> {
+        return {} as any;
+    }
+}
