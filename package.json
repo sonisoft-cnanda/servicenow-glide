@@ -1,5 +1,5 @@
 {
-  "name": "@servicenow/glide",
+  "name": "servicenow-glide",
   "version": "27.0.5",
   "description": "Contains type declaration for Glide Scriptable APIs",
   "scripts": {
@@ -15,22 +15,10 @@
   "files": [
     "dist"
   ],
+  "main": "./dist/index.js",
   "exports": {
-    ".": "./dist/types/index.js",
-    "./*": "./dist/*/index.js",
-    "./util": "./dist/util/index.js",
-    "./global": {
-      "import": "./dist/global/index.js",
-      "require": "./dist/global/index.js"
-    },
-    "./sn_vul": {
-      "import": "./dist/sn_vul/index.js",
-      "require": "./dist/sn_vul/index.js"
-    },
-    "./sn_sec_int": {
-      "import": "./dist/sn_sec_int/index.js",
-      "require": "./dist/sn_sec_int/index.js"
-    }
+    ".": "./dist/index.js",
+    "./*": "./dist/*/index.js"
   },
   "license": "MIT",
   "devDependencies": {
