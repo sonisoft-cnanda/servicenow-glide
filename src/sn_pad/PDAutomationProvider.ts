@@ -1,8 +1,23 @@
 export class PDAutomationProvider {
-    addOptionalActivityRelativeToActivityContext(contextId?: string, activityId?: string, where?: string, relativeActivityContextId?: string): Record<any, any> {
-        return {};
+    static activateProcess(processDefinitionSysId?: string): Record<any, any> {
+        return {} as any;
     }
-    addOptionalActivityRelativeToLaneContext(contextId?: string, activityId?: string, where?: string, relativeLaneContextId?: string): Record<any, any> {
-        return {};
+    static addOptionalActivityRelativeToActivityContext(contextId?: string, activityId?: string, where?: string, relativeActivityContextId?: string): Record<any, any> {
+        return {} as any;
+    }
+    static addOptionalActivityRelativeToLaneContext(contextId?: string, activityId?: string, where?: string, relativeLaneContextId?: string): Record<any, any> {
+        return {} as any;
+    }
+    static deactivateProcess(processDefinitionSysId?: string): Record<any, any> {
+        return {} as any;
+    }
+    static duplicateProcess(processDefinitionSysId?: string, label?: string, description?: string, scopeId?: string, triggerTypeId?: string, table?: string): Record<any, any> {
+        return {} as any;
+    }
+    static synchronizeProcess(processDefinitionSysId?: string, updateSetId?: string): Record<any, any> {
+        return {} as any;
+    }
+    static translatePlaybook(processDefinitionSysId?: string, updateSetId?: string): Record<any, any> {
+        return {} as any;
     }
 }

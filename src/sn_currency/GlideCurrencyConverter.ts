@@ -1,29 +1,29 @@
-import { GlideCurrencyExchangeValue } from '../imports/GlideCurrencyExchangeValue';
+import { GlideCurrencyExchangeValue } from "./GlideCurrencyExchangeValue";
 
 export class GlideCurrencyConverter {
-    constructor() {}
+    constructor() {  }
     convert(): GlideCurrencyExchangeValue {
-        return new GlideCurrencyExchangeValue();
+        return null as any;
     }
-    setAmount(value?: string): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setAmount(value: string): GlideCurrencyConverter {
+        return null as any;
     }
-    setDate(date?: any): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setDate(date: any): GlideCurrencyConverter {
+        return null as any;
     }
-    setDateTime(date?: any): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setDateTime(date: any): GlideCurrencyConverter {
+        return null as any;
     }
-    setFromCurrency(fromCurrency?: string): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setFromCurrency(fromCurrency: string): GlideCurrencyConverter {
+        return null as any;
     }
-    setRateTable(rateTable?: string): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setRateTable(rateTable: string): GlideCurrencyConverter {
+        return null as any;
     }
-    setRateTableQueryCondition(queryCondition?: string): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setRateTableQueryCondition(queryCondition: string): GlideCurrencyConverter {
+        return null as any;
     }
-    setToCurrency(toCurrency?: string): GlideCurrencyConverter {
-        return new GlideCurrencyConverter();
+    setToCurrency(toCurrency: string): GlideCurrencyConverter {
+        return null as any;
     }
 }

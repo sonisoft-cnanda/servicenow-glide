@@ -1,0 +1,12 @@
+export class ReplicationStatusHandler {
+    constructor() {  }
+    activateProducerSet(producerSetId?: string): void {
+        
+    }
+    clearReplicationSetWarning(setId?: string): void {
+        
+    }
+    setConsumerStatus(consumerSetId?: string, status?: string, message?: string, sendUpdate?: boolean): void {
+        
+    }
+}

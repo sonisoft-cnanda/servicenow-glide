@@ -1,16 +1,16 @@
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
 
 export class SOAPResponseV2 {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
     getAllHeaders(): Array<any> {
-        return new Array();
+        return [];
     }
     getBody(): string {
         return "";
     }
     getCookies(): any {
-        return null;
+        return null as any;
     }
     getErrorCode(): number {
         return 0;
@@ -22,7 +22,7 @@ export class SOAPResponseV2 {
         return "";
     }
     getHeaders(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getStatusCode(): number {
         return 0;

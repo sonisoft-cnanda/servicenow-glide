@@ -1,0 +1,18 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class StepResult {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    setFailed(): void {
+        
+    }
+    setOutputMessage(outputMessage?: string): void {
+        
+    }
+    setSuccess(): void {
+        
+    }
+    setSummaryMessage(summaryMessage?: string): void {
+        
+    }
+}

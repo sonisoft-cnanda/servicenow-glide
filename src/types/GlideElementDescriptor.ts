@@ -1,60 +1,8 @@
-import { GlideAttributes } from '../imports/GlideAttributes';
-import { DBI } from '../imports/DBI';
-
 export class GlideElementDescriptor {
-    constructor(name?: string, type?: string, length?: number) {}
-    canAvg(): boolean {
-        return false;
-    }
-    canMax(): boolean {
-        return false;
-    }
-    canMin(): boolean {
-        return false;
-    }
-    canSum(): boolean {
-        return false;
-    }
-    getAttachmentEncryptionType(): string {
-        return "";
-    }
-    getAttribute(name?: string): string {
-        return "";
-    }
-    getBooleanAttribute(attribute?: string, def?: boolean): boolean {
-        return false;
-    }
-    getChoice(): number {
-        return 0;
-    }
-    getChoiceTable(): string {
-        return "";
-    }
-    getColumnName(): string {
-        return "";
-    }
-    getDefault(): string {
-        return "";
-    }
-    getDependent(): string {
-        return "";
-    }
-    getDirectAttribute(name?: string): string {
-        return "";
-    }
-    getEncryptionType(): string {
-        return "";
-    }
-    getFirstTableName(): string {
-        return "";
-    }
-    getHint(): string {
-        return "";
-    }
-    getInternalType(): string {
-        return "";
-    }
-    getLabel(): string {
+    constructor();
+    constructor(name: string, type: string, length: number);
+    constructor(...args: any[]) {  }
+    toSQLType(dbi: any): string {
         return "";
     }
     getLength(): number {
@@ -63,8 +11,35 @@ export class GlideElementDescriptor {
     getName(): string {
         return "";
     }
-    getPlural(): string {
+    getColumnName(): string {
         return "";
+    }
+    getType(): number {
+        return 0;
+    }
+    serializeAttributes(): string {
+        return "";
+    }
+    getUniqueID(): string {
+        return "";
+    }
+    isMandatory(): boolean {
+        return false;
+    }
+    getInternalType(): string {
+        return "";
+    }
+    setInternalType(s: string): void {
+        
+    }
+    isVirtual(): boolean {
+        return false;
+    }
+    isActive(): boolean {
+        return false;
+    }
+    isInDatabase(): boolean {
+        return false;
     }
     getReference(): string {
         return "";
@@ -72,34 +47,160 @@ export class GlideElementDescriptor {
     getReferenceKey(): string {
         return "";
     }
-    getReferenceQualifier(): string {
-        return "";
+    setIsReference(b: boolean): void {
+        
+    }
+    setName(name: string): void {
+        
+    }
+    isObject(): boolean {
+        return false;
     }
     getSchemaTableName(): string {
+        return "";
+    }
+    getTableName(): string {
+        return "";
+    }
+    getChoice(): number {
+        return 0;
+    }
+    getDefault(): string {
+        return "";
+    }
+    getDependent(): string {
+        return "";
+    }
+    isDisplay(): boolean {
+        return false;
+    }
+    isReadOnly(): boolean {
+        return false;
+    }
+    isMultiText(): boolean {
+        return false;
+    }
+    getReferenceQualifier(): string {
         return "";
     }
     getScopeID(): string {
         return "";
     }
+    getChoiceTable(): string {
+        return "";
+    }
     getSqlLength(): number {
         return 0;
     }
-    getTableName(): string {
+    isTimeType(): boolean {
+        return false;
+    }
+    isDuration(): boolean {
+        return false;
+    }
+    isTime(): boolean {
+        return false;
+    }
+    isDateType(): boolean {
+        return false;
+    }
+    isMetricType(): boolean {
+        return false;
+    }
+    isDateOnly(): boolean {
+        return false;
+    }
+    mergeAttributesWithTables(): any {
+        return null as any;
+    }
+    isChoiceTable(): boolean {
+        return false;
+    }
+    isList(): boolean {
+        return false;
+    }
+    isJournal(): boolean {
+        return false;
+    }
+    isEdgeEncryptable(): boolean {
+        return false;
+    }
+    getEncryptionType(): string {
         return "";
     }
-    getType(): number {
-        return 0;
+    isEdgeEncrypted(): boolean {
+        return false;
     }
-    getUniqueID(): string {
+    getAttachmentEncryptionType(): string {
         return "";
     }
     hasAttachmentsEncrypted(): boolean {
         return false;
     }
-    hasAttribute(attribute?: string): boolean {
+    isEncrypted(): boolean {
         return false;
     }
-    isActive(): boolean {
+    isReference(): boolean {
+        return false;
+    }
+    isBoolean(): boolean {
+        return false;
+    }
+    isString(): boolean {
+        return false;
+    }
+    isJournalList(): boolean {
+        return false;
+    }
+    isNumber(): boolean {
+        return false;
+    }
+    isTrulyNumber(): boolean {
+        return false;
+    }
+    isAutoOrSysID(): boolean {
+        return false;
+    }
+    toXML(): any {
+        return null as any;
+    }
+    hasAttribute(attribute: string): boolean {
+        return false;
+    }
+    getBooleanAttribute(attribute: string, def?: boolean): boolean {
+        return false;
+    }
+    getAttribute(name: string): string {
+        return "";
+    }
+    getDirectAttribute(name: string): string {
+        return "";
+    }
+    toString(): string {
+        return "";
+    }
+    getPlural(): string {
+        return "";
+    }
+    getHint(): string {
+        return "";
+    }
+    canAvg(): boolean {
+        return false;
+    }
+    canSum(): boolean {
+        return false;
+    }
+    canMin(): boolean {
+        return false;
+    }
+    canMax(): boolean {
+        return false;
+    }
+    getFirstTableName(): string {
+        return "";
+    }
+    isFirstTableName(): boolean {
         return false;
     }
     isAdpEncrypted(): boolean {
@@ -108,109 +209,7 @@ export class GlideElementDescriptor {
     isAdpEncryptedDataAllowed(): boolean {
         return false;
     }
-    isAutoOrSysID(): boolean {
-        return false;
-    }
-    isBoolean(): boolean {
-        return false;
-    }
-    isChoiceTable(): boolean {
-        return false;
-    }
-    isDateOnly(): boolean {
-        return false;
-    }
-    isDateType(): boolean {
-        return false;
-    }
-    isDisplay(): boolean {
-        return false;
-    }
-    isDuration(): boolean {
-        return false;
-    }
-    isEdgeEncryptable(): boolean {
-        return false;
-    }
-    isEdgeEncrypted(): boolean {
-        return false;
-    }
-    isEncrypted(): boolean {
-        return false;
-    }
-    isFirstTableName(): boolean {
-        return false;
-    }
-    isInDatabase(): boolean {
-        return false;
-    }
-    isJournal(): boolean {
-        return false;
-    }
-    isJournalList(): boolean {
-        return false;
-    }
-    isList(): boolean {
-        return false;
-    }
-    isMandatory(): boolean {
-        return false;
-    }
-    isMetricType(): boolean {
-        return false;
-    }
-    isMultiText(): boolean {
-        return false;
-    }
-    isNumber(): boolean {
-        return false;
-    }
-    isObject(): boolean {
-        return false;
-    }
-    isReadOnly(): boolean {
-        return false;
-    }
-    isReference(): boolean {
-        return false;
-    }
-    isString(): boolean {
-        return false;
-    }
-    isTime(): boolean {
-        return false;
-    }
-    isTimeType(): boolean {
-        return false;
-    }
-    isTrulyNumber(): boolean {
-        return false;
-    }
-    isVirtual(): boolean {
-        return false;
-    }
-    mergeAttributesWithTables(): GlideAttributes {
-        return new GlideAttributes();
-    }
-    serializeAttributes(): string {
+    getLabel(): string {
         return "";
-    }
-    setInternalType(s?: string): void {
-        
-    }
-    setIsReference(b?: boolean): void {
-        
-    }
-    setName(name?: string): void {
-        
-    }
-    toSQLType(dbi?: DBI): string {
-        return "";
-    }
-    toString(): string {
-        return "";
-    }
-    toXML(): Element {
-        return new Element();
     }
 }

@@ -1,8 +1,9 @@
-import { GlideRecord } from '../imports/GlideRecord';
+import { GlideDateTime } from "../types/GlideDateTime";
+import { GlideRecord } from "../types/GlideRecord";
 
 export class GlideMultiRecurrence {
-    constructor() {}
-    getOccurrences(gr?: GlideRecord): Array<any> {
-        return new Array();
+    constructor() {  }
+    getOccurrences(gr: GlideRecord): Array<GlideDateTime> {
+        return [];
     }
 }

@@ -1,0 +1,11 @@
+export class SyncDataRecordSignatureUtil {
+    static getSignature(tableName: string, tableSysId: string, recordSignature: string, sysModCount: string, proxyGuid: string): string {
+        return "";
+    }
+    static removeProxySignature(proxyGuid: string): void {
+        
+    }
+    static updateProxySignature(proxyGuid: string, snKeyAlias: string): void {
+        
+    }
+}

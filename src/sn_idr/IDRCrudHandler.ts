@@ -1,0 +1,25 @@
+import { GlideRecord } from "../types/GlideRecord";
+
+export class IDRCrudHandler {
+    static afterDelete(current?: GlideRecord): void {
+        
+    }
+    static afterInsert(current?: GlideRecord): void {
+        
+    }
+    static afterUpdate(current?: GlideRecord, previous?: GlideRecord): void {
+        
+    }
+    static beforeDelete(current?: GlideRecord): void {
+        
+    }
+    static beforeInsert(current?: GlideRecord): void {
+        
+    }
+    static beforeUpdate(current?: GlideRecord, previous?: GlideRecord): void {
+        
+    }
+    static upgrade(current?: GlideRecord, replicationSetName?: string): void {
+        
+    }
+}

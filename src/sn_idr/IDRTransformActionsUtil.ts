@@ -1,0 +1,29 @@
+import { IDRTransformMapping } from "./IDRTransformMapping";
+import { GlideRecord } from "../types/GlideRecord";
+
+export class IDRTransformActionsUtil {
+    static addTransformRule(replEntryId?: string, sourceField?: string, targetField?: string, className?: string): string {
+        return "";
+    }
+    static cancelDraft(replEntryId?: string, className?: string): void {
+        
+    }
+    static createDefaultTransformation(entry?: GlideRecord, className?: string): void {
+        
+    }
+    static createDraftTransformation(replEntryId?: string, className?: string): void {
+        
+    }
+    static deleteTransformRule(replEntryId?: string, sourceField?: string, targetField?: string, className?: string): void {
+        
+    }
+    static deleteTransformerDefinition(recordTransfrom?: string): void {
+        
+    }
+    static getFieldsToHideOnTransformMapUI(entryGr?: GlideRecord): string {
+        return "";
+    }
+    static getTransformRules(replEntryId?: string, className?: string): IDRTransformMapping[] {
+        return [];
+    }
+}

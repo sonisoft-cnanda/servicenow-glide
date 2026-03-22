@@ -1,0 +1,8 @@
+export class IDRDCTProcessorJob {
+    static execute(): void {
+        
+    }
+    static executeAndReturnPerformanceResults(jobRunTime?: number): string {
+        return "";
+    }
+}

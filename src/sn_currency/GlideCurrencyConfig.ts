@@ -1,5 +1,5 @@
 export class GlideCurrencyConfig {
-    constructor() {}
+    constructor() {  }
     getAggregationSource(): string {
         return "";
     }

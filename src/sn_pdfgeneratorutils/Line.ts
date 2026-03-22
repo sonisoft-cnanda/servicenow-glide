@@ -1,8 +1,8 @@
-import { Document } from '../imports/Document';
-import { Color } from '../imports/Color';
+import { Color } from "./Color";
+import { Document } from "./Document";
 
 export class Line {
-    constructor() {}
+    constructor() {  }
     drawLine(document?: Document, pageNo?: number, xPos?: number, yPos?: number, width?: number, lineWidth?: number): void {
         
     }

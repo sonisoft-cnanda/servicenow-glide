@@ -1,0 +1,5 @@
+export class ReplicationSetDetailSender {
+    static send(producerSetId?: string, consumerInstanceId?: string, previousApproval?: string, currentApproval?: string): void {
+        
+    }
+}

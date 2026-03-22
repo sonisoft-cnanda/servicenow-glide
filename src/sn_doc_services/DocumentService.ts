@@ -1,15 +1,14 @@
-import { SystemDocument } from '../imports/SystemDocument';
-import { JSONObject } from '../imports/JSONObject';
+import { SystemDocument } from "./SystemDocument";
 
 export class DocumentService {
-    constructor() {}
-    createDocument(document?: SystemDocument): JSONObject {
-        return new JSONObject();
+    constructor() {  }
+    createDocument(document: SystemDocument): any {
+        return null as any;
     }
-    deleteDocument(documentSysId?: string): JSONObject {
-        return new JSONObject();
+    deleteDocument(documentSysId: string): any {
+        return null as any;
     }
-    updateDocument(documentSysId?: string, document?: SystemDocument): JSONObject {
-        return new JSONObject();
+    updateDocument(documentSysId: string, document: SystemDocument): any {
+        return null as any;
     }
 }

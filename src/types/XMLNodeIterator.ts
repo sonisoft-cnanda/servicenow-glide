@@ -1,9 +1,11 @@
+import { XMLNode } from "./XMLNode";
+
 export class XMLNodeIterator {
-    constructor() {}
+    constructor() {  }
     hasNext(): boolean {
         return false;
     }
-    next(): any {
-        return null;
+    next(): XMLNode {
+        return null as any;
     }
 }

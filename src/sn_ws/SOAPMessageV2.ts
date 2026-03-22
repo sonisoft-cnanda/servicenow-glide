@@ -1,14 +1,14 @@
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { SOAPResponseV2 } from '../imports/SOAPResponseV2';
+import { Context } from "../imports/Context";
+import { Function } from "../imports/Function";
+import { SOAPResponseV2 } from "./SOAPResponseV2";
 
 export class SOAPMessageV2 {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
     execute(): SOAPResponseV2 {
-        return new SOAPResponseV2();
+        return null as any;
     }
     executeAsync(): SOAPResponseV2 {
-        return new SOAPResponseV2();
+        return null as any;
     }
     getEndpoint(): string {
         return "";
@@ -20,10 +20,16 @@ export class SOAPMessageV2 {
         return "";
     }
     getRequestHeaders(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getVariables(): Array<string> {
-        return new Array<string>();
+        return [];
+    }
+    setAllowedRedirectURIWithNoParams(allowedRedirectURIs?: Array<any>): void {
+        
+    }
+    setAllowedRedirectURIs(allowedRedirectURIs?: Array<any>): void {
+        
     }
     setAuthenticationProfile(type?: string, profileName?: string): void {
         
@@ -38,6 +44,9 @@ export class SOAPMessageV2 {
         
     }
     setEndpoint(endpoint?: string): void {
+        
+    }
+    setFollowRedirect(followRedirect?: boolean): void {
         
     }
     setHttpTimeout(timeoutMs?: number): void {

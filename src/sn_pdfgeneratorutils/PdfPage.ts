@@ -1,5 +1,5 @@
 export class PdfPage {
-    constructor(pageSize?: string, orientation?: string) {}
+    constructor(pageSize: string, orientation: string) {  }
     getBottom(): number {
         return 0;
     }
@@ -16,6 +16,6 @@ export class PdfPage {
         return 0;
     }
     rotate(): PdfPage {
-        return new PdfPage();
+        return null as any;
     }
 }

@@ -1,21 +1,21 @@
-import { NativeObject } from '../imports/NativeObject';
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { Data } from '../imports/Data';
-import { NativeArray } from '../imports/NativeArray';
+import { Context } from "../imports/Context";
+import { NativeArray } from "../imports/NativeArray";
+import { NativeObject } from "../imports/NativeObject";
+import { Function } from "../imports/Function";
+import { Data } from "./Data";
 
 export class TransformResult {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
     byGroup(): NativeObject {
-        return new NativeObject();
+        return null as any;
     }
     getByLabel(label?: string): Data {
-        return new Data();
+        return null as any;
     }
     getData(): Data {
-        return new Data();
+        return null as any;
     }
     toArray(): NativeArray {
-        return new NativeArray();
+        return null as any;
     }
 }

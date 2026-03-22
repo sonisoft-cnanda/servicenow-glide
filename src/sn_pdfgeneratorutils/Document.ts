@@ -1,22 +1,23 @@
-import { IEventHandler } from '../imports/IEventHandler';
-import { Image } from '../imports/Image';
-import { Paragraph } from '../imports/Paragraph';
-import { Table } from '../imports/Table';
-import { PdfPage } from '../imports/PdfPage';
-import { OutputStream } from '../imports/OutputStream';
+import { Table } from "./Table";
+import { PdfPage } from "./PdfPage";
+import { Image } from "./Image";
+import { Paragraph } from "./Paragraph";
 
 export class Document {
-    constructor(os?: any, pageSize?: PdfPage) {}
+    constructor(os?: any, pageSize?: PdfPage) {  }
     addAndStartNewPage(): void {
         
     }
     addAuthor(author?: string): void {
         
     }
-    addEvent(event?: string, eventHandler?: IEventHandler): void {
+    addEvent(event?: string, eventHandler?: any): void {
         
     }
     addImage(image?: Image): void {
+        
+    }
+    addLink(url?: string, label?: string): void {
         
     }
     addNewLine(): void {
@@ -37,16 +38,16 @@ export class Document {
     close(): void {
         
     }
-    createDocument(pageSize?: PdfPage): Document {
-        return new Document();
+    static createDocument(pageSize?: PdfPage): Document {
+        return null as any;
     }
     getPageCount(): number {
         return 0;
     }
     getPageSize(): PdfPage {
-        return new PdfPage();
+        return null as any;
     }
-    initializeDocument(os?: OutputStream, pageSize?: PdfPage): void {
+    initializeDocument(os?: any, pageSize?: PdfPage): void {
         
     }
     isClosed(): boolean {

@@ -1,265 +1,262 @@
-import { GlideRecord } from '../imports/GlideRecord';
-import { Scriptable } from '../imports/Scriptable';
-import { SPScriptArray } from '../imports/SPScriptArray';
-import { GlideElement } from '../imports/GlideElement';
-import { SPScriptObject } from '../imports/SPScriptObject';
-import { NativeArray } from '../imports/NativeArray';
-import { JSONArray } from '../imports/JSONArray';
-import { NativeObject } from '../imports/NativeObject';
-import { JSONObject } from '../imports/JSONObject';
+import { NativeArray } from "../imports/NativeArray";
+import { NativeObject } from "../imports/NativeObject";
+import { Scriptable } from "../imports/Scriptable";
+import { GlideElement } from "./GlideElement";
+import { GlideRecord } from "./GlideRecord";
 
 export class GlideSPScriptable {
-    constructor(portalID?: string) {}
-    addQueryString(gr?: GlideRecord, queryString?: string): GlideRecord {
-        return new GlideRecord("");
-    }
-    buildThemeVariableModel(portalId?: string, names?: string): Scriptable {
-        return new Scriptable();
-    }
-    canReadRecord(table?: string, id?: string): boolean {
-        return false;
-    }
-    canSeePage(pageID?: string): boolean {
-        return false;
-    }
-    getAISearchResultsActionConfig(searchConfigContextId?: string, portalId?: string): string {
-        return "";
-    }
-    getAllKBRecords(kbIDs?: string): GlideRecord {
-        return new GlideRecord("");
-    }
-    getAllowedItems(): Scriptable {
-        return new Scriptable();
-    }
-    getAnnouncementConsumerType(typeIds?: Array<any>): Record<any, any> {
-        return {};
-    }
-    getAssessmentRecord(assessmentId?: string, typeId?: string, data?: Scriptable): Scriptable {
-        return new Scriptable();
-    }
-    getCatalogItem(itemID?: string, isOrdering?: boolean, tableName?: string): Scriptable {
-        return new Scriptable();
-    }
-    getCatalogs(): Scriptable {
-        return new Scriptable();
-    }
-    getDisplayValue(name?: string): string {
-        return "";
-    }
-    getField(gr?: GlideRecord, name?: string): Scriptable {
-        return new Scriptable();
-    }
-    getFields(gr?: GlideRecord, names?: string): Scriptable {
-        return new Scriptable();
-    }
-    getFieldsObject(gr?: GlideRecord, names?: string): Scriptable {
-        return new Scriptable();
-    }
-    getFilterBreadcrumbs(table?: string, query?: string, fixedQuery?: string): SPScriptArray {
-        return new SPScriptArray();
-    }
-    getForm(table?: string, sys_id?: string, encodedQuery?: string, view?: string, isPopup?: boolean, includeScripts?: boolean): Scriptable {
-        return new Scriptable();
-    }
-    getGuide(itemID?: string, isOrdering?: boolean, addIncludedItems?: boolean): Scriptable {
-        return new Scriptable();
-    }
-    getHTTPS(httpsURL?: string): Scriptable {
-        return new Scriptable();
-    }
-    getInstanceRecord(): GlideRecord {
-        return new GlideRecord("");
-    }
-    getItemDisplayPrice(itemID?: string, tableName?: string, quantity?: number): Scriptable {
-        return new Scriptable();
-    }
-    getKBCategoryArticleSummaries(category?: string, limit?: number, maxChars?: number): Scriptable {
-        return new Scriptable();
-    }
-    getKBCategoryArticleSummary(category?: string, limit?: number, maxChars?: number): Scriptable {
-        return new Scriptable();
-    }
-    getKBCategoryArticles(category?: string, limit?: number): Scriptable {
-        return new Scriptable();
-    }
-    getKBCount(kbIDs?: string): number {
-        return 0;
-    }
-    getKBRecord(): GlideRecord {
-        return new GlideRecord("");
-    }
-    getKBSiblingCategories(catID?: string): GlideRecord {
-        return new GlideRecord("");
-    }
-    getKBTopCategoryID(catId?: string): string {
-        return "";
-    }
-    getKnowledgeBases(): string {
-        return "";
-    }
-    getListColumns(tableName?: string, view?: string): Scriptable {
-        return new Scriptable();
-    }
-    getMenuHREF(gr?: GlideRecord): Scriptable {
-        return new Scriptable();
-    }
-    getMenuItems(sys_id?: string): Scriptable {
-        return new Scriptable();
-    }
-    getPageRecord(pageID?: string, pageSysId?: string): GlideRecord {
-        return new GlideRecord("");
-    }
-    getParameter(name?: string): any {
-        return null;
-    }
+    constructor();
+    constructor(portalID: string);
+    constructor(...args: any[]) {  }
     getPortalRecord(): GlideRecord {
-        return new GlideRecord("");
+        return null as any;
     }
-    getRecord(table?: string, sys_id?: string): GlideRecord {
-        return new GlideRecord("");
+    getRecord(): GlideRecord;
+    getRecord(table: string, sys_id: string, applyDataFilters?: boolean): GlideRecord;
+    getRecord(table: string, ge: GlideElement): GlideRecord;
+    getRecord(...args: any[]): any {
+        return null as any;
     }
-    getRecordDisplayValues(data?: Scriptable, from?: GlideRecord, names?: string): void {
-        
+    getWidgetParameters(): Scriptable {
+        return null as any;
     }
-    getRecordElements(data?: Scriptable, from?: GlideRecord, names?: string): void {
-        
+    getValue(name: string): any {
+        return null as any;
     }
-    getRecordValues(data?: Scriptable, from?: GlideRecord, names?: string): void {
-        
-    }
-    getRecordVariables(gr?: GlideRecord, includeNilResponses?: boolean): string {
+    getDisplayValue(name: string): string {
         return "";
     }
-    getRecordVariablesArray(gr?: GlideRecord, includeNilResponses?: boolean): Scriptable {
-        return new Scriptable();
-    }
-    getRectangleRecord(): GlideRecord {
-        return new GlideRecord("");
-    }
-    getRelatedList(tableName?: string, foreignKey?: string): NativeArray {
-        return new NativeArray();
-    }
-    getSCRecord(): GlideRecord {
-        return new GlideRecord("");
-    }
-    getSPVlistActions(sysId?: string): JSONArray {
-        return new JSONArray();
-    }
-    getSearchSources(portalID?: string, commaSeparatedSourceIDs?: string): NativeArray {
-        return new NativeArray();
-    }
-    getStream(table?: string, sys_id?: string): Scriptable {
-        return new Scriptable();
-    }
-    getStreamEntries(): string {
-        return "";
-    }
-    getSubCategories(catId?: string): GlideRecord {
-        return new GlideRecord("");
-    }
-    getTableVariableRow(data?: NativeObject): Scriptable {
-        return new Scriptable();
-    }
-    getTaxonomies(): string {
-        return "";
-    }
-    getUserInitials(): string {
-        return "";
-    }
-    getUserTrackingDetails(): JSONObject {
-        return new JSONObject();
-    }
-    getValue(name?: string): any {
-        return null;
-    }
-    getValues(data?: Scriptable, names?: string): void {
+    getValues(data: Scriptable, names?: string): void {
         
+    }
+    getRecordValues(data: Scriptable, from: GlideRecord, names: string): void {
+        
+    }
+    getRecordDisplayValues(data: Scriptable, from: GlideRecord, names: string): void {
+        
+    }
+    getRecordElements(from: GlideRecord, names: string): NativeObject;
+    getRecordElements(data: Scriptable, from: GlideRecord, names: string): void;
+    getRecordElements(...args: any[]): any {
+        return null as any;
+    }
+    getWidgetScope(instanceID: string): Scriptable {
+        return null as any;
+    }
+    getWidgetFromInstance(instanceID: string): Scriptable {
+        return null as any;
+    }
+    getWidgetFromRectangle(instanceID: string): Scriptable {
+        return null as any;
+    }
+    getWidget(widgetID: string, widgetParams?: any): Scriptable {
+        return null as any;
+    }
+    getRelatedList(tableName: string, foreignKey: string): NativeArray {
+        return null as any;
+    }
+    getParameter(name: string): any {
+        return null as any;
     }
     getVariables(includeNilResponses?: boolean): string {
         return "";
     }
+    getRecordVariables(gr: GlideRecord, includeNilResponses?: boolean): string {
+        return "";
+    }
     getVariablesArray(includeNilResponses?: boolean): Scriptable {
-        return new Scriptable();
+        return null as any;
     }
-    getWidget(widgetID?: string, widgetParams?: any): Scriptable {
-        return new Scriptable();
+    getRecordVariablesArray(gr: GlideRecord, includeNilResponses?: boolean): Scriptable {
+        return null as any;
     }
-    getWidgetFromInstance(instanceID?: string): Scriptable {
-        return new Scriptable();
+    getStreamEntries(): string {
+        return "";
     }
-    getWidgetFromRectangle(instanceID?: string): Scriptable {
-        return new Scriptable();
+    getStream(): Scriptable;
+    getStream(table: string, sys_id: string): Scriptable;
+    getStream(...args: any[]): any {
+        return null as any;
     }
-    getWidgetParameters(): Scriptable {
-        return new Scriptable();
+    getListColumns(tableName: string, view?: string): Scriptable {
+        return null as any;
     }
-    getWidgetScope(instanceID?: string): Scriptable {
-        return new Scriptable();
+    getUserInitials(): string {
+        return "";
+    }
+    getField(gr: GlideRecord, name: string): Scriptable {
+        return null as any;
+    }
+    getFields(gr: GlideRecord, names: string): Scriptable {
+        return null as any;
+    }
+    getFieldsObject(gr: GlideRecord, names: string): Scriptable {
+        return null as any;
+    }
+    getFilterBreadcrumbs(table: string, query: string, fixedQuery: string): NativeArray {
+        return null as any;
+    }
+    static logStat(type: string, table: string, id: string, text?: string, portalId?: string): void {
+        
+    }
+    static logSearch(table: string, terms: string, count: number, searchType?: string, portal?: string, page?: string): void {
+        
+    }
+    static canSeePage(pageID: string): boolean {
+        return false;
+    }
+    canReadRecord(gr: GlideRecord): boolean;
+    canReadRecord(table: string, id: string): boolean;
+    canReadRecord(...args: any[]): any {
+        return false;
+    }
+    getCatalogItem(data: Scriptable): Scriptable;
+    getCatalogItem(itemID: string, isOrdering?: boolean, tableName?: string): Scriptable;
+    getCatalogItem(...args: any[]): any {
+        return null as any;
+    }
+    getGuide(itemID: string, isOrdering: boolean, addIncludedItems: boolean): Scriptable {
+        return null as any;
+    }
+    getForm(table: string, sys_id: string, encodedQuery?: string, view?: string, isPopup?: boolean, includeScripts?: boolean): Scriptable {
+        return null as any;
+    }
+    saveRecord(table: string, sys_id: string, model: Scriptable): Scriptable {
+        return null as any;
+    }
+    saveVariables(table: string, sys_id: string, model: Scriptable): Scriptable {
+        return null as any;
+    }
+    getKBCategoryArticles(category: string, limit?: number): Scriptable {
+        return null as any;
+    }
+    getKBCategoryArticleSummaries(category: string, limit: number, maxChars: number): Scriptable {
+        return null as any;
+    }
+    getKBCategoryArticleSummary(category: string, limit: number, maxChars: number): Scriptable {
+        return null as any;
+    }
+    getKBSiblingCategories(catID: string): GlideRecord {
+        return null as any;
+    }
+    getKBCount(kbIDs: string): number {
+        return 0;
+    }
+    getSubCategories(catId: string): GlideRecord {
+        return null as any;
+    }
+    getKBTopCategoryID(catId: string): string {
+        return "";
+    }
+    getKBRecord(): GlideRecord {
+        return null as any;
+    }
+    getAllKBRecords(kbIDs: string): GlideRecord {
+        return null as any;
+    }
+    getSCRecord(): GlideRecord {
+        return null as any;
+    }
+    stripHTML(html: string): Scriptable {
+        return null as any;
+    }
+    getMenuItems(sys_id: string): Scriptable {
+        return null as any;
+    }
+    getMenuHREF(gr: GlideRecord): Scriptable {
+        return null as any;
+    }
+    getInstanceRecord(): GlideRecord {
+        return null as any;
+    }
+    buildThemeVariableModel(portalId: string, names: string): Scriptable {
+        return null as any;
     }
     getWidgetSysId(): string {
         return "";
     }
-    hasPublicAccessToTable(table?: string, widgetOptions?: any, widgetInput?: any): boolean {
+    getTaxonomies(): string {
+        return "";
+    }
+    getAssessmentRecord(assessmentId: string, typeId: string, data: Scriptable): Scriptable {
+        return null as any;
+    }
+    getSPVlistActions(sysId: string): Array<any> {
+        return [];
+    }
+    getAnnouncementConsumerType(typeIds: string[]): Record<string, string> {
+        return {} as any;
+    }
+    getUserTrackingDetails(): any {
+        return null as any;
+    }
+    hasPublicAccessToTable(table: string, widgetOptions: any, widgetInput: any): boolean {
         return false;
     }
-    hasTextIndex(tableName?: string): boolean {
+    getUiScriptsVersionMap(): string {
+        return "";
+    }
+    getSearchApplicationConfigForNASSEnabledPortal(): string {
+        return "";
+    }
+    shouldUseESLatest(tableName: string, sysId: string): boolean {
+        return false;
+    }
+    getUserPreferredChannels(): string {
+        return "";
+    }
+    hasTextIndex(tableName: string): boolean {
         return false;
     }
     isAISearchEnabled(): boolean {
         return false;
     }
+    isChatAssistantEnabled(): boolean {
+        return false;
+    }
     isDarkThemeEnabledInPortal(): boolean {
+        return false;
+    }
+    isDynamicChatAssistantEnabled(): boolean {
+        return false;
+    }
+    isNowAssistEnabled(): boolean {
         return false;
     }
     isRTLEnabled(): boolean {
         return false;
     }
-    isServicePortalURL(inputURL?: string): boolean {
+    isServicePortalURL(inputURL: string): boolean {
         return false;
     }
     isUserCriteriaEnabled(): boolean {
         return false;
     }
-    log(message?: any): void {
+    log(message: any): void {
         
     }
-    logSearch(table?: string, terms?: string, count?: number, searchType?: string, portal?: string, page?: string): void {
-        
-    }
-    logStat(type?: string, table?: string, id?: string, text?: string, portalId?: string): void {
-        
-    }
-    mapUrlToSPUrl(url?: string): string {
+    mapUrlToSPUrl(url: string): string {
         return "";
     }
-    portalHasChatConfig(portalId?: string): boolean {
+    portalHasChatConfig(portalId: string): boolean {
         return false;
     }
-    publishSearchAnalytics(payloadString?: string): void {
+    publishSearchAnalytics(payloadString: string): void {
         
-    }
-    saveRecord(table?: string, sys_id?: string, model?: Scriptable): Scriptable {
-        return new Scriptable();
-    }
-    saveVariables(table?: string, sys_id?: string, model?: Scriptable): Scriptable {
-        return new Scriptable();
     }
     showCatalogPrices(): boolean {
         return false;
     }
-    showPrice(price?: number): boolean {
+    showPrice(price: number): boolean {
         return false;
     }
-    showRecurringPrice(price?: number, freq?: string): boolean {
+    showRecurringPrice(price: number, freq: string): boolean {
         return false;
     }
-    stripHTML(html?: string): Scriptable {
-        return new Scriptable();
-    }
-    translateTemplate(input?: string): string {
+    translateTemplate(input: string): string {
         return "";
     }
-    userCanSeeSearchSourceByCriteria(searchSourceID?: string): boolean {
+    userCanSeeSearchSourceByCriteria(searchSourceID: string): boolean {
         return false;
     }
 }

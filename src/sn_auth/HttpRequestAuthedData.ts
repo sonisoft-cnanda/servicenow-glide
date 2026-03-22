@@ -1,9 +1,9 @@
 export class HttpRequestAuthedData {
-    constructor() {}
-    addHeader(key?: string, value?: string): void {
+    constructor() {  }
+    addHeader(key: string, value: string): void {
         
     }
-    addQueryParam(key?: string, value?: string): void {
+    addQueryParam(key: string, value: string): void {
         
     }
     getCredentialValue(): string {
@@ -12,11 +12,11 @@ export class HttpRequestAuthedData {
     getDirective(): string {
         return "";
     }
-    getHeaderMap(): Record<any, any> {
-        return {};
+    getHeaderMap(): Map<string, string> {
+        return {} as any;
     }
-    getQueryMap(): Record<any, any> {
-        return {};
+    getQueryMap(): Map<string, string> {
+        return {} as any;
     }
     getStatus(): string {
         return "";
@@ -24,16 +24,16 @@ export class HttpRequestAuthedData {
     getStatusMessage(): string {
         return "";
     }
-    setCredentialValue(credentialValue?: string): void {
+    setCredentialValue(credentialValue: string): void {
         
     }
-    setDirective(directive?: string): void {
+    setDirective(directive: string): void {
         
     }
-    setStatus(status?: string): void {
+    setStatus(status: string): void {
         
     }
-    setStatusMessage(statusMessage?: string): void {
+    setStatusMessage(statusMessage: string): void {
         
     }
 }

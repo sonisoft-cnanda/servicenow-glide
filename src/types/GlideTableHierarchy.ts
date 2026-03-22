@@ -1,13 +1,13 @@
 export class GlideTableHierarchy {
-    constructor(tableName?: string) {}
-    getAllExtensions(): Array<any> {
-        return new Array();
+    constructor(tableName: string) {  }
+    getAllExtensions(): Array<string> {
+        return [];
     }
     getBase(): string {
         return "";
     }
-    getHierarchy(): Array<any> {
-        return new Array();
+    getHierarchy(): Array<string> {
+        return [];
     }
     getName(): string {
         return "";
@@ -15,11 +15,11 @@ export class GlideTableHierarchy {
     getRoot(): string {
         return "";
     }
-    getTableExtensions(): Array<any> {
-        return new Array();
+    getTableExtensions(): Array<string> {
+        return [];
     }
-    getTables(): Array<any> {
-        return new Array();
+    getTables(): Array<string> {
+        return [];
     }
     hasExtensions(): boolean {
         return false;

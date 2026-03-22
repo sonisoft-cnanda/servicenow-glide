@@ -1,17 +1,17 @@
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
-import { RESTResponseV2 } from '../imports/RESTResponseV2';
+import { Context } from "../imports/Context";
+import { Function } from "../imports/Function";
+import { RESTResponseV2 } from "./RESTResponseV2";
 
 export class RESTMessageV2 {
-    constructor(messageName?:string, methodName?:string) {}
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
     disableForcedVariableSubstitution(): void {
         
     }
     execute(): RESTResponseV2 {
-        return new RESTResponseV2();
+        return null as any;
     }
     executeAsync(): RESTResponseV2 {
-        return new RESTResponseV2();
+        return null as any;
     }
     getEccTopic(): string {
         return "";
@@ -20,7 +20,7 @@ export class RESTMessageV2 {
         return "";
     }
     getParameters(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getRequestBody(): string {
         return "";
@@ -29,12 +29,18 @@ export class RESTMessageV2 {
         return "";
     }
     getRequestHeaders(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     getVariables(): Array<string> {
-        return new Array<string>();
+        return [];
     }
     saveResponseBodyAsAttachment(tableName?: string, recordSysId?: string, filename?: string, encryptContext?: string): void {
+        
+    }
+    setAllowedRedirectURIWithNoParams(uris?: Array<any>): void {
+        
+    }
+    setAllowedRedirectURIs(uris?: Array<any>): void {
         
     }
     setAuthenticationProfile(type?: string, profileId?: string): void {

@@ -1,21 +1,21 @@
 export class Color {
-    constructor(colors?: number[]) {}
-    equals(color?: Color): boolean {
+    constructor(colors: number[]) {  }
+    equals(color: Color): boolean {
         return false;
     }
-    getGrayColor(grayScale?: number): Color {
-        return new Color();
+    static getGrayColor(grayScale: number): Color {
+        return null as any;
     }
     getOpacity(): number {
         return 0;
     }
     getcolorValue(): number[] {
-        return new Array();
+        return [];
     }
-    setColorValue(value?: number[]): void {
+    setColorValue(value: number[]): void {
         
     }
-    setOpacity(opacity?: number): void {
+    setOpacity(opacity: number): void {
         
     }
 }

@@ -1,5 +1,5 @@
 export class GlideImportSetTransformMap {
-    constructor() {}
+    constructor() {  }
     addDateTimeTransformEntry(sourceColumn?: string, targetColumn?: string, coalesce?: boolean, dateTimeFormat?: string): void {
         
     }

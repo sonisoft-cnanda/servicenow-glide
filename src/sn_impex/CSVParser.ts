@@ -1,9 +1,9 @@
 export class CSVParser {
-    constructor() {}
+    constructor() {  }
     parseLineToArray(csv?: string, delimiter?: string, quoteCharacter?: string): Array<any> {
-        return new Array();
+        return [];
     }
     parseLineToObject(csv?: string, headers?: Array<any>, delimiter?: string, quoteCharacter?: string): Record<any, any> {
-        return {};
+        return {} as any;
     }
 }

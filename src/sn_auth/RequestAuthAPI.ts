@@ -1,17 +1,17 @@
-import { HttpRequestAuthedData } from '../imports/HttpRequestAuthedData';
-import { AuthCredential } from '../imports/AuthCredential';
-import { HttpRequestData } from '../imports/HttpRequestData';
+import { AuthCredential } from "./AuthCredential";
+import { HttpRequestAuthedData } from "./HttpRequestAuthedData";
+import { HttpRequestData } from "./HttpRequestData";
 
 export class RequestAuthAPI {
-    constructor() {}
+    constructor() {  }
     generateAuth(): HttpRequestAuthedData {
-        return new HttpRequestAuthedData();
+        return null as any;
     }
     getAuthCredential(): AuthCredential {
-        return new AuthCredential();
+        return null as any;
     }
     getHttpRequestData(): HttpRequestData {
-        return new HttpRequestData();
+        return null as any;
     }
     resetAuthCredential(): void {
         

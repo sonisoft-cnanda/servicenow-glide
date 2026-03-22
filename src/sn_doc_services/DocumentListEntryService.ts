@@ -1,15 +1,14 @@
-import { SystemDocumentListEntry } from '../imports/SystemDocumentListEntry';
-import { JSONObject } from '../imports/JSONObject';
+import { SystemDocumentListEntry } from "./SystemDocumentListEntry";
 
 export class DocumentListEntryService {
-    constructor() {}
-    createDocumentListEntry(entry?: SystemDocumentListEntry): JSONObject {
-        return new JSONObject();
+    constructor() {  }
+    createDocumentListEntry(entry: SystemDocumentListEntry): any {
+        return null as any;
     }
-    deleteDocumentListEntry(listEntrySysId?: string): JSONObject {
-        return new JSONObject();
+    deleteDocumentListEntry(listEntrySysId: string): any {
+        return null as any;
     }
-    updateDocumentListEntry(listEntrySysId?: string, entry?: SystemDocumentListEntry): JSONObject {
-        return new JSONObject();
+    updateDocumentListEntry(listEntrySysId: string, entry: SystemDocumentListEntry): any {
+        return null as any;
     }
 }

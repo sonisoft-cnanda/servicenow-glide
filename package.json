@@ -1,17 +1,15 @@
 {
   "name": "@servicenow/glide",
-  "version": "27.0.0-alpha.16",
+  "version": "27.0.5",
   "description": "Contains type declaration for Glide Scriptable APIs",
   "scripts": {
-    "prebuild": " npm run create-index",
-    "copy": "copyfiles -f  './src/*/*.ts' ./src/imports && rm ./src/imports/index.ts",
+    "sync": "node scripts/sync.js",
+    "sync:check": "node scripts/sync.js --dry-run",
     "buildts": "tsc -p ./ && tsc-alias",
-    "build": "npm run prebuild && npm run clean && npm run buildts",
-    "create-index": "npx ctix build --config ./.ctirc",
+    "build": "npm run clean && npm run buildts",
     "prepublishOnly": "npm run build",
     "ci": "npm ci",
     "clean": "rimraf dist && rimraf tsconfig.tsbuildinfo"
-   
   },
   "types": "./dist/index.d.ts",
   "files": [

@@ -1,0 +1,12 @@
+export class OnDemandAppLifecycleAPI {
+    constructor() {  }
+    clearAppLifecycleTracker(): void {
+        
+    }
+    logAppLifecycleEvent(jsonString?: string): void {
+        
+    }
+    queueOnDemandAppLifecycleEvent(appSysId?: string, sysCode?: string, appName?: string, scope?: string, version?: string, customizationVersion?: string): void {
+        
+    }
+}

@@ -1,7 +1,7 @@
-import { GlideScriptableInputStream } from '../imports/GlideScriptableInputStream';
+import { GlideScriptableInputStream } from "./GlideScriptableInputStream";
 
 export class GlideTextReader {
-    constructor(inputStream?: GlideScriptableInputStream, charsetName?: string) {}
+    constructor(inputStream: GlideScriptableInputStream, charsetName: string) {  }
     getEncoding(): string {
         return "";
     }

@@ -1,0 +1,6 @@
+export class ClothoConnectionTest {
+    constructor(testArtifactId?: string, clothoConfigSysId?: string) {  }
+    start(): void {
+        
+    }
+}

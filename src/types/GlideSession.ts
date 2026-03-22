@@ -1,52 +1,56 @@
-import { Stack } from '../imports/Stack';
-import { ChoiceList } from '../imports/ChoiceList';
-import { IPAddress } from '../imports/IPAddress';
-import { CryptoModulePicker } from '../imports/CryptoModulePicker';
-import { EncryptionContext } from '../imports/EncryptionContext';
-import { HttpSession } from '../imports/HttpSession';
-import { ScopedKMFKaaProfile } from '../imports/ScopedKMFKaaProfile';
-import { GlideStack } from '../imports/GlideStack';
-import { TimeZone } from '../imports/TimeZone';
-import { GlideUser } from '../imports/GlideUser';
-import { GlideRecord } from '../imports/GlideRecord';
+import { SncIPAddress } from "./SncIPAddress";
 
 export class GlideSession {
-    constructor() {}
-    addErrorMessage(message?: string): void {
+    constructor() {  }
+    addErrorMessage(message: string): void {
         
     }
-    addInfoMessage(message?: string): void {
+    addHighMessage(message: string): void {
         
     }
-    addTrivialMessage(message?: string): void {
+    addInfoMessage(message: string): void {
         
     }
-    checkActiveDBs(): void {
+    addLowMessage(message: string): void {
         
     }
-    clearClientData(name?: string): void {
+    addModerateMessage(message: string): void {
         
     }
-    clearProperty(key?: string): void {
+    addSuggestionMessage(message: string): void {
+        
+    }
+    addSuccessMessage(message: string): void {
+        
+    }
+    addTrivialMessage(message: string): void {
+        
+    }
+    addWarningMessage(message: string): void {
+        
+    }
+    clearClientData(name: string): void {
+        
+    }
+    clearProperty(key: string): void {
         
     }
     clearWatchField(): void {
         
     }
-    disableQueryCategoryPool(poolName?: string): void {
+    disableQueryCategoryPool(poolName: string): void {
         
     }
-    disableSeparation(): void {
+    static disableSeparation(): void {
         
     }
-    disconnect(releaseMutexes?: boolean): void {
+    static disconnect(): void;
+    static disconnect(releaseMutexes: boolean): void;
+    static disconnect(...args: any[]): any {
         
     }
     enableSeparation(): void {
         
-    }
-    get(): GlideSession {
-        return new GlideSession();
     }
     getActivatedElevatedRoles(): string {
         return "";
@@ -54,74 +58,58 @@ export class GlideSession {
     getAvailableElevatedRoles(): string {
         return "";
     }
-    getBooleanProperty(key?: string, bDefault?: boolean): boolean {
+    getBooleanProperty(name: string): boolean;
+    getBooleanProperty(key: string, bDefault: boolean): boolean;
+    getBooleanProperty(...args: any[]): any {
         return false;
     }
-    getBusinessRuleStack(): Stack {
-        return new Stack();
+    getBusinessRuleStack(): any {
+        return null as any;
     }
-    getClientData(name?: string): string {
-        return "";
-    }
-    getClientDataMap(): ChoiceList {
-        return new ChoiceList();
-    }
-    getClientIP(): IPAddress {
-        return new IPAddress();
-    }
-    getContextualMode(): string {
-        return "";
-    }
-    getCryptoModulePicker(): CryptoModulePicker {
-        return new CryptoModulePicker();
-    }
-    getCryptoModulePickerForTableWithSingleModule(tableName?: string): CryptoModulePicker {
-        return new CryptoModulePicker();
+    getClientDataMap(): any {
+        return null as any;
     }
     getCurrentDomainID(): string {
         return "";
     }
-    getDateFormat(style?: string): string {
+    getCryptoModulePicker(): any {
+        return null as any;
+    }
+    getCryptoModulePickerForTableWithSingleModule(tableName: string): any {
+        return null as any;
+    }
+    getDateFormat(): string;
+    getDateFormat(style: string): string;
+    getDateFormat(...args: any[]): any {
         return "";
     }
-    getDateTimeFormat(dateStyle?: string): string {
+    getDateTimeFormat(): string;
+    getDateTimeFormat(dateStyle: string): string;
+    getDateTimeFormat(...args: any[]): any {
         return "";
     }
-    getEncryptionContext(): EncryptionContext {
-        return new EncryptionContext();
+    getEncryptionContext(): any {
+        return null as any;
     }
     getFullName(): string {
         return "";
     }
-    getHttpSession(): HttpSession {
-        return new HttpSession();
+    getHighMessage(): void {
+        
     }
-    getIntProperty(key?: string, iDefault?: number): number {
-        return 0;
+    getKaaProfile(): any {
+        return null as any;
     }
-    getKaaProfile(): ScopedKMFKaaProfile {
-        return new ScopedKMFKaaProfile();
-    }
-    getLanguage(): string {
+    getLoginHome(direct: boolean): string {
         return "";
     }
-    getLoginHome(direct?: boolean): string {
-        return "";
-    }
-    getNumberOfWaiters(): number {
-        return 0;
-    }
-    getProperty(key?: string): any {
-        return null;
-    }
-    getRoles(includeDefaultRoles?: boolean): string {
+    getRoles(): string;
+    getRoles(includeDefaultRoles: boolean): string;
+    getRoles(...args: any[]): any {
         return "";
     }
     getRunEngines(): boolean {
         return false;
-    }
-    getSeparationValue(): string {
-        return "";
     }
     getSessionID(): string {
         return "";
@@ -129,8 +117,8 @@ export class GlideSession {
     getSessionKey(): string {
         return "";
     }
-    getStack(stackName?: string): GlideStack {
-        return new GlideStack();
+    getStack(): any {
+        return null as any;
     }
     getStackName(): string {
         return "";
@@ -138,8 +126,8 @@ export class GlideSession {
     getTimeFormat(): string {
         return "";
     }
-    getTimeZone(): TimeZone {
-        return new TimeZone();
+    getTimeZone(): any {
+        return null as any;
     }
     getTimeZoneName(): string {
         return "";
@@ -153,8 +141,8 @@ export class GlideSession {
     getURI(): string {
         return "";
     }
-    getUser(): GlideUser {
-        return new GlideUser();
+    getUser(): any {
+        return null as any;
     }
     getUserName(): string {
         return "";
@@ -165,10 +153,10 @@ export class GlideSession {
     getWorkflow(): boolean {
         return false;
     }
-    hasRole(appRoles?: string): boolean {
+    hasRole(appRoles: string): boolean {
         return false;
     }
-    impersonate(userSysId?: string): string {
+    impersonate(userSysId: string): string {
         return "";
     }
     isInteractive(): boolean {
@@ -180,28 +168,31 @@ export class GlideSession {
     isLoggedIn(): boolean {
         return false;
     }
-    isOverridingQueryRoute(poolGR?: GlideRecord): boolean {
+    isOverridingQueryRoute(poolGR: any): boolean {
         return false;
     }
-    isQueryCategoryPoolDisabled(poolName?: string): boolean {
+    isQueryCategoryPoolDisabled(poolName: string): boolean {
         return false;
     }
-    loadUserByID(userSysId?: string): GlideUser {
-        return new GlideUser();
+    loadUserByID(userSysId: string): any {
+        return null as any;
     }
-    onlineImpersonate(userSysId?: string): string {
+    getHttpSession(): any {
+        return null as any;
+    }
+    onlineImpersonate(userSysId: string): string {
         return "";
     }
     onlineUnimpersonate(): string {
         return "";
     }
-    putClientData(name?: string, value?: string): void {
+    putClientData(name: string, value: string): void {
         
     }
-    putProperty(key?: string, value?: any): void {
+    putProperty(key: string, value: any): void {
         
     }
-    resetDisabledQueryCategoryPool(poolName?: string): void {
+    resetDisabledQueryCategoryPool(poolName: string): void {
         
     }
     resetOverrideQueryCategoryPool(): void {
@@ -210,49 +201,87 @@ export class GlideSession {
     resetURI(): string {
         return "";
     }
-    setCacheFlush(onOrOff?: boolean): boolean {
+    setCacheFlush(onOrOff: boolean): boolean {
         return false;
     }
-    setCacheIgnoreFlushTable(table?: string): string {
+    setCacheIgnoreFlushTable(table: string): string {
         return "";
     }
-    setContextualMode(mode?: string): void {
+    setCurrentDomainID(domainID: string): void {
         
     }
-    setDateFormat(dateFormat?: string): void {
+    setDateFormat(dateFormat: string): void {
         
     }
-    setDomainID(domainID?: string): void {
+    setDomainID(domainID: string): void {
         
     }
-    setInteractive(b?: boolean): void {
+    setInteractive(b: boolean): void {
         
     }
-    setLanguage(language?: string): void {
+    setLanguage(language: string): void {
         
     }
-    setOverrideQueryCategoryPool(poolGR?: GlideRecord): void {
+    setOverrideQueryCategoryPool(poolGR: any): void {
         
     }
-    setRunEngines(onOrOff?: boolean): boolean {
+    setRunEngines(onOrOff: boolean): boolean {
         return false;
     }
-    setStrictQuery(b?: boolean): boolean {
+    setSessionID(string: string): void {
+        
+    }
+    setStack(s: any): void;
+    setStack(stackName: string, s: any): void;
+    setStack(...args: any[]): any {
+        
+    }
+    setTimeFormat(timeFormat: string): void {
+        
+    }
+    setTimeZoneName(timezoneName: string): void {
+        
+    }
+    setURI(uri: string): void {
+        
+    }
+    setWatchField(id: string): void {
+        
+    }
+    setWorkflow(onOrOff: boolean): boolean {
         return false;
     }
-    setTimeFormat(timeFormat?: string): void {
+    static enableSeparation(): void {
         
     }
-    setTimeZoneName(timezoneName?: string): void {
-        
+    static get(): GlideSession {
+        return null as any;
     }
-    setURI(uri?: string): void {
-        
+    static getSeparationValue(): string {
+        return "";
     }
-    setWatchField(id?: string): void {
-        
+    getClientData(name: string): string {
+        return "";
     }
-    setWorkflow(onOrOff?: boolean): boolean {
+    getClientIP(): SncIPAddress {
+        return null as any;
+    }
+    getLanguage(): string {
+        return "";
+    }
+    getUrlOnStack(): string {
+        return "";
+    }
+    getSessionToken(): string {
+        return "";
+    }
+    getCurrentApplicationId(): string {
+        return "";
+    }
+    isImpersonating(): boolean {
         return false;
+    }
+    getApplicationPickerList(): Array<Record<any, any>> {
+        return [];
     }
 }

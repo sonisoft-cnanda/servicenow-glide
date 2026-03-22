@@ -1,24 +1,24 @@
-import { XMLNodeIterator } from '../imports/XMLNodeIterator';
+import { XMLNodeIterator } from "./XMLNodeIterator";
 
 export class XMLNode {
-    constructor() {}
+    constructor() {  }
     appendChild(newChild?: any): void {
         
     }
     getAttribute(attribute?: string): string {
         return "";
     }
-    getAttributes(): Record<any, any> {
-        return {};
+    getAttributes(): Map<string, string> {
+        return {} as any;
     }
     getChildNodeIterator(): XMLNodeIterator {
-        return new XMLNodeIterator();
+        return null as any;
     }
     getFirstChild(): XMLNode {
-        return new XMLNode();
+        return null as any;
     }
     getLastChild(): XMLNode {
-        return new XMLNode();
+        return null as any;
     }
     getNodeName(): string {
         return "";

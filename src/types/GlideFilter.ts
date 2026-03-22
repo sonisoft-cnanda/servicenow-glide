@@ -1,29 +1,32 @@
-import { GlideRecord } from '../imports/GlideRecord';
+import { GlideRecord } from "./GlideRecord";
 
 export class GlideFilter {
-    constructor(filter?: string, title?: string) {}
-    checkRecord(gr?: GlideRecord, filter?: string, match?: boolean): boolean {
-        return false;
-    }
-    getDisplayTitle(): string {
+    constructor(filter: string, title: string) {  }
+    getFilter(): string {
         return "";
     }
-    getFilter(): string {
+    match(gr: GlideRecord, bMatchAll: boolean): boolean {
+        return false;
+    }
+    getScript(filterString: string, targetTableName: string): string {
         return "";
     }
     getTitle(): string {
         return "";
     }
-    match(gr?: GlideRecord, bMatchAll?: boolean): boolean {
+    getDisplayTitle(): string {
+        return "";
+    }
+    setDisplayTitle(title: string): void {
+        
+    }
+    static checkRecord(gr: GlideRecord, filter: string, match?: boolean): boolean {
         return false;
     }
-    setCaseSensitive(caseSensitive?: boolean): void {
+    setCaseSensitive(caseSensitive: boolean): void {
         
     }
-    setDisplayTitle(title?: string): void {
-        
-    }
-    setEnforceSecurity(enforceSecurity?: boolean): void {
+    setEnforceSecurity(enforceSecurity: boolean): void {
         
     }
 }

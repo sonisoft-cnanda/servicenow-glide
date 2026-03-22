@@ -1,93 +1,93 @@
-import { Cell } from '../imports/Cell';
-import { Style } from '../imports/Style';
-import { Image } from '../imports/Image';
-import { Paragraph } from '../imports/Paragraph';
-import { Color } from '../imports/Color';
+import { Cell } from "./Cell";
+import { Color } from "./Color";
+import { Paragraph } from "./Paragraph";
+import { Style } from "./Style";
+import { Image } from "./Image";
 
 export class Table {
-    constructor(ltr?: boolean, columnWidths?: number[], largeTable?: boolean) {}
-    addCell(cell?: Cell): void {
+    constructor(ltr: boolean, columnWidths: number[], largeTable: boolean) {  }
+    addCell(cell: Cell): void {
         
     }
-    addCellWithStyle(cell?: Cell, style?: Style): void {
+    addCellWithStyle(cell: Cell, style: Style): void {
         
     }
-    addHeaderCell(cell?: Cell): void {
+    addHeaderCell(cell: Cell): void {
         
     }
-    addImageCell(image?: Image): void {
+    addImageCell(image: Image): void {
         
     }
-    addParagraphCell(p?: Paragraph): void {
+    addParagraphCell(p: Paragraph): void {
         
     }
-    addTextCell(text?: string): void {
+    addTextCell(text: string): void {
         
     }
     complete(): void {
         
     }
-    donotSplitRowOnPageBreak(value?: boolean): void {
+    donotSplitRowOnPageBreak(value: boolean): void {
         
     }
     flush(): void {
         
     }
     getDefaultStyle(): Style {
-        return new Style();
+        return null as any;
     }
     getDefaultbackGroundColor(): Color {
-        return new Color();
+        return null as any;
     }
     getHeaderStyle(): Style {
-        return new Style();
+        return null as any;
     }
-    setBackGroundColor(color?: Color): void {
+    setBackGroundColor(color: Color): void {
         
     }
-    setBorder(width?: number): void {
+    setBorder(width: number): void {
         
     }
-    setDefaultStyle(defaultStyle?: Style): void {
+    setDefaultStyle(defaultStyle: Style): void {
         
     }
-    setDefaultbackGroundColor(color?: Color): void {
+    setDefaultbackGroundColor(color: Color): void {
         
     }
-    setFixedPosition(pageNumber?: number, left?: number, bottom?: number, width?: number): void {
+    setFixedPosition(pageNumber: number, left: number, bottom: number, width: number): void {
         
     }
-    setHeaderStyle(headerStyle?: Style): void {
+    setHeaderStyle(headerStyle: Style): void {
         
     }
-    setHorizontalAlignment(alignment?: string): void {
+    setHorizontalAlignment(alignment: string): void {
         
     }
-    setKeepTogether(val?: boolean): void {
+    setKeepTogether(val: boolean): void {
         
     }
-    setMargin(margin?: number): void {
+    setMargin(margin: number): void {
         
     }
-    setMarginBottom(margin?: number): void {
+    setMarginBottom(margin: number): void {
         
     }
-    setMarginLeft(margin?: number): void {
+    setMarginLeft(margin: number): void {
         
     }
-    setMarginRight(margin?: number): void {
+    setMarginRight(margin: number): void {
         
     }
-    setMarginTop(margin?: number): void {
+    setMarginTop(margin: number): void {
         
     }
-    setRunDirection(direction?: string): void {
+    setRunDirection(direction: string): void {
         
     }
-    setSkipFirstHeader(skipFirstHeader?: boolean): void {
+    setSkipFirstHeader(skipFirstHeader: boolean): void {
         
     }
-    setWidth(width?: number): void {
+    setWidth(width: number): void {
         
     }
     useAllAvailableWidth(): void {

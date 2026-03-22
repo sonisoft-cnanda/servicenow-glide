@@ -1,72 +1,78 @@
-import { Plugin } from '../imports/Plugin';
-import { GlideRecord } from '../imports/GlideRecord';
+import { GlideExtensionPoint } from "../imports/GlideExtensionPoint";
+import { GlidePlugin } from "../imports/GlidePlugin";
+import { GlideRecord } from "./GlideRecord";
 
 export class GlidePluginManager {
-    constructor() {}
-    canRollback(pluginName?: string): boolean {
+    constructor() {  }
+    static canRollback(pluginName: string): boolean {
         return false;
     }
-    getActivePlugin(pluginName?: string): Plugin {
-        return new Plugin();
+    static getActivePlugin(pluginName: string): GlidePlugin {
+        return null as any;
     }
-    getActivePlugins(): Record<any, any> {
-        return {};
+    static getActivePlugins(): Map<string, GlidePlugin> {
+        return {} as any;
     }
-    getExtensionMap(): Record<any, any> {
-        return {};
+    static getExtensionMap(): Map<string, Map<string, GlideExtensionPoint>> {
+        return {} as any;
     }
-    getInstalledCorePlugins(): Record<any, any> {
-        return {};
+    static getInstalledCorePlugins(): Map<string, GlidePlugin> {
+        return {} as any;
     }
-    getInstalledPlugin(pluginName?: string): Plugin {
-        return new Plugin();
+    static getInstalledPlugin(pluginName: string): GlidePlugin {
+        return null as any;
     }
-    getInstalledPlugins(): Record<any, any> {
-        return {};
+    static getInstalledPlugins(): Map<string, GlidePlugin> {
+        return {} as any;
     }
-    getPluginDependencies(pluginName?: string): string {
+    static getPluginDependencies(pluginName: string): string {
         return "";
     }
-    getPluginPath(pluginName?: string): string {
+    static getPluginPath(pluginName: string): string {
         return "";
     }
-    getRollbackContextId(pluginName?: string): string {
+    static getRollbackContextId(pluginName: string): string {
         return "";
     }
-    getRollbackDenialReason(pluginName?: string): string {
+    static getRollbackDenialReason(pluginName: string): string {
         return "";
     }
-    getRollbackRunId(rollbackContextId?: string): string {
+    static getRollbackRunId(rollbackContextId: string): string {
         return "";
     }
-    getUninstalledConditionalPlugins(pluginName?: string): GlideRecord {
-        return new GlideRecord("");
+    static getUninstalledConditionalPlugins(pluginName: string): GlideRecord {
+        return null as any;
     }
-    init(haveDB?: boolean): void {
+    init(haveDB: boolean): void {
         
     }
-    isActive(plugin_id?: string): boolean {
+    static isActive(plugin_id: string): boolean {
         return false;
     }
-    isRegistered(pluginId?: string): boolean {
+    static isPublished(plugin_id: string): boolean {
+        return false;
+    }
+    static isRegistered(pluginId: string): boolean {
         return false;
     }
     isSkipDependentUpdate(): boolean {
         return false;
     }
-    isUpgradeSystemBusy(): boolean {
+    static isUpgradeSystemBusy(): boolean {
         return false;
     }
-    isZboot(): boolean {
+    static isZboot(): boolean {
         return false;
     }
-    loadAllDemo(): void {
+    static loadAllDemo(): void {
         
     }
-    loadDemoData(pluginName?: string): void {
+    static loadDemoData(pluginName: string): void {
         
     }
-    loadPluginData(pluginName?: string, dir?: string): void {
+    static loadPluginData(pluginName: string): void;
+    static loadPluginData(pluginName: string, dir: string): void;
+    static loadPluginData(...args: any[]): any {
         
     }
     registerAndActivateCoreJumboApps(): void {
@@ -75,22 +81,22 @@ export class GlidePluginManager {
     registerOOBContent(): void {
         
     }
-    registerPlugin(pluginName?: string): void {
+    registerPlugin(pluginName: string): void {
         
     }
-    repairPlugin(pluginName?: string): void {
+    repairPlugin(pluginName: string): void {
         
     }
-    setSkipDependentUpdate(b?: boolean): void {
+    setSkipDependentUpdate(b: boolean): void {
         
     }
-    setSource(source?: string): void {
+    setSource(source: string): void {
         
     }
-    setZboot(b?: boolean): void {
+    static setZboot(b: boolean): void {
         
     }
-    startPluginFromCluster(pluginName?: string): void {
+    static startPluginFromCluster(pluginName: string): void {
         
     }
     upgrade(): void {
@@ -99,7 +105,7 @@ export class GlidePluginManager {
     upgradeCount(): number {
         return 0;
     }
-    verifyFilenames(): void {
+    static verifyFilenames(): void {
         
     }
 }

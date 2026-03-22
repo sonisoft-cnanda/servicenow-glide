@@ -1,0 +1,5 @@
+export class SharedKeyResponder {
+    static respond(targetInstanceId?: string, producerInstanceID?: string, approvalStatus?: string, replicationSetId?: string, replicationSetName?: string): void {
+        
+    }
+}

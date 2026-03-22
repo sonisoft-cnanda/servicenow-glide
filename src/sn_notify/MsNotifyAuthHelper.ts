@@ -1,0 +1,10 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+import { Scriptable } from '../imports/Scriptable'
+
+export class MsNotifyAuthHelper {
+    constructor(cx?: Context, args?: any[], funObj?: Function, inNewExpr?: boolean) {  }
+    static isValidWebhookToken(cx?: Context, scope?: Scriptable, args?: any[], funObj?: Function): boolean {
+        return false;
+    }
+}

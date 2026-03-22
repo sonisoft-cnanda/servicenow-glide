@@ -1,2 +1,14 @@
 export class GlideServletResponse {
+    setHeader(key: string, value: string): void {
+        
+    }
+    setContentType(type: string): void {
+        
+    }
+    sendRedirect(location: string): void {
+        
+    }
+    setStatus(status: number): void {
+        
+    }
 }

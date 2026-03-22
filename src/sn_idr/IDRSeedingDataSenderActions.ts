@@ -1,0 +1,11 @@
+export class IDRSeedingDataSenderActions {
+    static cancel(reqId?: string): void {
+        
+    }
+    static pause(reqId?: string): void {
+        
+    }
+    static resume(reqId?: string): void {
+        
+    }
+}

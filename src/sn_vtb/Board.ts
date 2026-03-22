@@ -1,0 +1,45 @@
+export class Board {
+    constructor() {  }
+    addLabel(labelName?: string): void {
+        
+    }
+    addLane(laneName?: string): void {
+        
+    }
+    addMember(memberUserSysId?: string): void {
+        
+    }
+    createBoard(): string {
+        return "";
+    }
+    setBackgroundColor(color?: string): void {
+        
+    }
+    setCardLimit(limit?: number): void {
+        
+    }
+    setDefaultListView(listViewName?: string): void {
+        
+    }
+    setFilter(filter?: string): void {
+        
+    }
+    setLabelsVisibility(showLabels?: boolean): void {
+        
+    }
+    setListToggleVisibility(showListToggle?: boolean): void {
+        
+    }
+    setName(name?: string): void {
+        
+    }
+    setOwner(ownerSysId?: string): void {
+        
+    }
+    setPickerVisibility(showPicker?: boolean): void {
+        
+    }
+    setStreamLimit(limit?: number): void {
+        
+    }
+}

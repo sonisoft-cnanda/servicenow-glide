@@ -1,26 +1,32 @@
 export class PerformanceAPI {
-    canCompare(performanceRunId1?: string, performanceRunId2?: string): boolean {
+    static canCompare(performanceRunId1?: string, performanceRunId2?: string): boolean {
         return false;
     }
-    doesSuiteHavePerformanceComparableStep(suiteId?: string): boolean {
+    static doesSuiteHavePerformanceComparableStep(suiteId?: string): boolean {
         return false;
     }
-    doesTestHavePerformanceComparableStep(testId?: string): boolean {
+    static doesTestHavePerformanceComparableStep(testId?: string): boolean {
         return false;
     }
-    generateComparison(performanceID?: string): string {
+    static generateComparison(performanceID?: string): string {
         return "";
     }
-    getComparablePerformanceRunStatuses(): string {
+    static getComparablePerformanceRunStatuses(): string {
         return "";
     }
-    isCloudRunnerActive(): boolean {
+    static isCloudRunnerActive(): boolean {
         return false;
     }
-    isCloudRunnerActiveAndSupportsPerformance(): boolean {
+    static isCloudRunnerActiveAndSupportsPerformance(): boolean {
         return false;
     }
-    isComparable(sysId?: string): boolean {
+    static isComparable(sysId?: string): boolean {
         return false;
+    }
+    static pauseForAtfPerformance(): boolean {
+        return false;
+    }
+    static resumeForAtfPerformance(): void {
+        
     }
 }

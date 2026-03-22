@@ -1,33 +1,33 @@
-import { Context } from '../imports/Context';
-import { Function } from '../imports/Function';
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
 
 export class CMDBGroupAPI {
-    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {}
-    enqueueEvent(groupSysId?: string, operation?: string): void {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    static enqueueEvent(groupSysId?: string, operation?: string): void {
         
     }
-    generateEvents(): void {
+    static generateEvents(): void {
         
     }
-    getAllCI(groupSysId?: string, requireCompleteSet?: boolean, requireAllQueryNodesCis?: boolean): string {
+    static getAllCI(groupSysId?: string, requireCompleteSet?: boolean, requireAllQueryNodesCis?: boolean): string {
         return "";
     }
-    getAllCIFromQueryBuilder(groupSysId?: string, requireCompleteSet?: boolean, requireAllQueryNodesCis?: boolean): string {
+    static getAllCIFromQueryBuilder(groupSysId?: string, requireCompleteSet?: boolean, requireAllQueryNodesCis?: boolean): string {
         return "";
     }
-    getEventQueue(): string {
+    static getEventQueue(): string {
         return "";
     }
-    getManualCIList(groupSysId?: string, requireCompleteSet?: boolean): string {
+    static getManualCIList(groupSysId?: string, requireCompleteSet?: boolean): string {
         return "";
     }
-    getSavedQueryIdList(groupSysId?: string, requireCompleteSet?: boolean): string {
+    static getSavedQueryIdList(groupSysId?: string, requireCompleteSet?: boolean): string {
         return "";
     }
-    setManualCIList(groupSysId?: string, ciSysIds?: string): string {
+    static setManualCIList(groupSysId?: string, ciSysIds?: string): string {
         return "";
     }
-    setSavedQueryIdList(groupSysId?: string, queryIds?: string): string {
+    static setSavedQueryIdList(groupSysId?: string, queryIds?: string): string {
         return "";
     }
 }

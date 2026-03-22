@@ -1,0 +1,15 @@
+import { Context } from '../imports/Context'
+import { Function } from '../imports/Function'
+
+export class Action {
+    constructor(cx?: Context, args?: any[], ctorObj?: Function, inNewExpr?: boolean) {  }
+    log(message?: string): void {
+        
+    }
+    runById(id?: string): void {
+        
+    }
+    runByName(name?: string): void {
+        
+    }
+}

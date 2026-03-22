@@ -1,5 +1,7 @@
 export * from './DocumentListEntryService';
 export * from './DocumentListService';
+export * from './DocumentPermalink';
+export * from './DocumentPermalinkAPI';
 export * from './DocumentReferenceService';
 export * from './DocumentService';
 export * from './DocumentVersionService';

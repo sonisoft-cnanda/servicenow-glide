@@ -1,18 +1,18 @@
-import { ScriptableRequestAuthCredential } from '../imports/ScriptableRequestAuthCredential';
-import { ScriptableStandardCredential } from '../imports/ScriptableStandardCredential';
+import { StandardCredential } from "./StandardCredential";
+import { AuthCredential } from "../sn_auth/AuthCredential";
 
 export class StandardCredentialsProvider {
-    constructor() {}
-    getAuthCredentialByID(id?: string): ScriptableRequestAuthCredential {
-        return new ScriptableRequestAuthCredential();
+    constructor() {  }
+    getAuthCredentialByID(id?: string): AuthCredential {
+        return null as any;
     }
-    getCredentialByAliasID(aliasId?: string): ScriptableStandardCredential {
-        return new ScriptableStandardCredential();
+    getCredentialByAliasID(aliasId?: string): StandardCredential {
+        return null as any;
     }
-    getCredentialByID(id?: string): ScriptableStandardCredential {
-        return new ScriptableStandardCredential();
+    getCredentialByID(id?: string): StandardCredential {
+        return null as any;
     }
     getCredentials(types?: Array<any>, credentialTag?: string): Array<any> {
-        return new Array();
+        return [];
     }
 }

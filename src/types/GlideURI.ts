@@ -1,24 +1,27 @@
 export class GlideURI {
-    constructor() {}
-    deleteMatchingParameter(match?: string): void {
-        
-    }
-    deleteParmameter(string?: string): void {
-        
-    }
-    get(name?: string): string {
+    constructor() {  }
+    get(name: string): string {
         return "";
     }
     getFileFromPath(): string {
         return "";
     }
-    getMap(): Record<any, any> {
-        return {};
-    }
-    setView(view?: string): void {
+    set(name: string, value: string): void {
         
     }
     toString(path?: string): string {
         return "";
+    }
+    deleteParmameter(name: string): void {
+        
+    }
+    deleteMatchingParameters(name: string): void {
+        
+    }
+    getMap(): Map<string, string> {
+        return {} as any;
+    }
+    setView(view: string): void {
+        
     }
 }

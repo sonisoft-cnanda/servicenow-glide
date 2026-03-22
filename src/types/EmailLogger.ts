@@ -1,0 +1,23 @@
+export class EmailLogger {
+    error(errorString: string): void {
+        
+    }
+    info(infoString: string): void {
+        
+    }
+    log(infoString: string): void {
+        
+    }
+    logError(errorString: string): void {
+        
+    }
+    logInfo(infoString: string): void {
+        
+    }
+    logWarning(errorString: string): void {
+        
+    }
+    warn(errorString: string): void {
+        
+    }
+}

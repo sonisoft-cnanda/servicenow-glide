@@ -1,44 +1,44 @@
-import { NativeArray } from '../imports/NativeArray';
-import { NativeObject } from '../imports/NativeObject';
+import { NativeObject } from '../imports/NativeObject'
+import { NativeArray } from '../imports/NativeArray'
 
 export class DuplicateTemplate {
-    canAddTasksToTemplate(taskIds?: NativeArray, templateId?: string): NativeObject {
-        return new NativeObject();
+    static canAddTasksToTemplate(taskIds?: NativeArray, templateId?: string): NativeObject {
+        return null as any;
     }
-    createTemplate(template?: NativeObject): string {
+    static createTemplate(template?: NativeObject): string {
         return "";
     }
-    getTemplate(templateId?: string): NativeObject {
-        return new NativeObject();
+    static getTemplate(templateId?: string): NativeObject {
+        return null as any;
     }
-    preview(templateId?: string, taskId?: string): NativeObject {
-        return new NativeObject();
+    static preview(templateId?: string, taskId?: string): NativeObject {
+        return null as any;
     }
-    publishTemplate(templateId?: string): boolean {
+    static publishTemplate(templateId?: string): boolean {
         return false;
     }
-    remediateTask(templateId?: string, taskId?: string): string {
+    static remediateTask(templateId?: string, taskId?: string): string {
         return "";
     }
-    remediateTaskRun(taskRunId?: string, triggerId?: string): void {
+    static remediateTaskRun(taskRunId?: string, triggerId?: string): void {
         
     }
-    requestCancellation(templateRunId?: string): boolean {
+    static requestCancellation(templateRunId?: string): boolean {
         return false;
     }
-    retireTemplate(templateId?: string): boolean {
+    static retireTemplate(templateId?: string): boolean {
         return false;
     }
-    runScheduler(): void {
+    static runScheduler(): void {
         
     }
-    runTemplate(templateId?: string): string {
+    static runTemplate(templateId?: string): string {
         return "";
     }
-    unPublishTemplate(templateId?: string): boolean {
+    static unPublishTemplate(templateId?: string): boolean {
         return false;
     }
-    updateTemplate(templateId?: string, template?: NativeObject): boolean {
+    static updateTemplate(templateId?: string, template?: NativeObject): boolean {
         return false;
     }
 }

@@ -1,32 +1,31 @@
-import { MultiElementUUID } from '../imports/MultiElementUUID';
-import { JSONObject } from '../imports/JSONObject';
+import { MultiElementUUID } from "../imports/MultiElementUUID";
 
 export class PASnapshot {
-    getCompareIDs(uuidString?: string, dateStr1?: string, dateStr2?: string, type?: string): string {
+    static getCompareIDs(uuidString?: string, dateStr1?: string, dateStr2?: string, type?: string): string {
         return "";
     }
-    getCompareQuery(uuidString?: string, dateStr1?: string, dateStr2?: string, type?: string, breakdown?: string, elements?: string, filteredBreakdown?: string, elementsFilter?: string): string {
+    static getCompareQuery(uuidString?: string, dateStr1?: string, dateStr2?: string, type?: string, breakdown?: string, elements?: string, filteredBreakdown?: string, elementsFilter?: string): string {
         return "";
     }
-    getEncodedComparedQuery(uuidString?: string, dateStr1?: string, dateStr2?: string, type?: string): string {
+    static getEncodedComparedQuery(uuidString?: string, dateStr1?: string, dateStr2?: string, type?: string): string {
         return "";
     }
-    getEncodedQuery(uuidString?: string, dateStr?: string, breakdown?: string, elements?: string, filteredBreakdown?: string, elementsFilter?: string): string {
+    static getEncodedQuery(uuidString?: string, dateStr?: string, breakdown?: string, elements?: string, filteredBreakdown?: string, elementsFilter?: string): string {
         return "";
     }
-    getEncodedQueryWithMultiUUID(multiElementUUID?: MultiElementUUID, dateStr?: string): JSONObject {
-        return new JSONObject();
+    static getEncodedQueryWithMultiUUID(multiElementUUID?: MultiElementUUID, dateStr?: string): any {
+        return null as any;
     }
-    getIDs(uuidString?: string, dateStr?: string, breakdown?: string, elements?: string, filteredBreakdownId?: string, elementsFilterId?: string): string {
+    static getIDs(uuidString?: string, dateStr?: string, breakdown?: string, elements?: string, filteredBreakdownId?: string, elementsFilterId?: string): string {
         return "";
     }
-    getQuery(uuidString?: string, dateStr?: string, breakdown?: string, elements?: string, filteredBreakdown?: string, elementsFilter?: string): string {
+    static getQuery(uuidString?: string, dateStr?: string, breakdown?: string, elements?: string, filteredBreakdown?: string, elementsFilter?: string): string {
         return "";
     }
-    getRecordsForDateRange(uuidString?: string, fromDateStr?: string, toDateStr?: string): string {
+    static getRecordsForDateRange(uuidString?: string, fromDateStr?: string, toDateStr?: string): string {
         return "";
     }
-    getSysIDs(indicatorSysID?: string, periodStr?: string, breakdownSysID?: string, elementSysID?: string, breakdownLevel2SysID?: string, elementLevel2SysID?: string, aggregateSysID?: string): string {
+    static getSysIDs(indicatorSysID?: string, periodStr?: string, breakdownSysID?: string, elementSysID?: string, breakdownLevel2SysID?: string, elementLevel2SysID?: string, aggregateSysID?: string): string {
         return "";
     }
 }

@@ -1,7 +1,7 @@
 export class MetricInfo {
-    constructor() {}
+    constructor() {  }
     getRetentionSchedulesInMinutes(): Record<any, any> {
-        return {};
+        return {} as any;
     }
     isValid(): boolean {
         return false;

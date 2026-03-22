@@ -1,0 +1,14 @@
+export class ProcessMiningForExternalData {
+    static deleteAllDataForExternalDataset(datasetId?: string): void {
+        
+    }
+    static deleteExternalDataset(datasetId?: string): void {
+        
+    }
+    static executeGenerateCaseData(datasetId?: string): void {
+        
+    }
+    static scheduleCaseGeneration(datasetId?: string): string {
+        return "";
+    }
+}
